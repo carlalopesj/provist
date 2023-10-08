@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dela+Gothic+One&family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&family=Young+Serif&display=swap');
+/*
+font-family: 'Dela Gothic One', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Labrada', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Young Serif', serif;
+*/
+
+/*Corpo padrão da página*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #01080e;
+}
+
+/*Navegação*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 110px;
+}
+
+/*Parte da nossa logo Provist*/
+#logo {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+#logo p {
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+/*Divisão das categorias ao clicar em projetos*/
+.nav ul li {
+    position: relative;
+}
+
+#exibir-categorias {
+    padding: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 250px;
+    left: 0;
+    background-color: #01080e;
+    font-weight: 200;
+}
+
+.linkCat a {
+    color: rgba(255, 255, 255, 0.807);
+    text-decoration: none;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+/*ícone ao lado de projetos*/
+#icon-proj {
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+/*Continuação da nav*/
+#ul {
+    display: flex;
+    align-items: center;
+}
+
+.li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+/*Ao passar o mouse: */
+.link-proj:hover .link, .link:hover, .link-proj:hover #icon-proj {
+    color: rgb(43, 174, 226);
+}
+
+
+/*Botão de Logine e Cadastro*/
+
+.li #button button{
+    padding: 10px;
+    background-color: rgb(43, 174, 226);
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.li #button button:hover {
+    background-color: white;
+    color: rgb(43, 174, 226);
+    cursor: pointer;
+}
+
+/*Parte MAIN principal do site*/
+main {
+    color: white;
+    padding: 170px;
+    text-align: center;
+}
+/*Textos informativos*/
+.cabecalho h1{
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.cabecalho h2 {
+    font-weight: 300;
+    padding-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.cabecalho p {
+    margin: 7px;
+    padding: 12px;
+    font-weight: 200;
+    font-style: italic;
+    color:rgb(132, 130, 154);
+}
+
+/*Configuração geral das exposições do projeto*/
+.grid-container-allpro {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 30px;
+    gap: 40px;
+    text-align: center;
+}
+
+/*Configuração de cada bloco de um projeto*/
+
+.grid-item-a {
+    border: 8px solid #e3dddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 30px -7px rgba(114, 132, 188, 0.75);
+}
+
+.grid-item-a h2 {
+    background-color: #ffffff;
+    color: black;
+}
+
+.grid-item-a p {
+    background-color: #ffffff;
+    color:black;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.more {
+    background-color: rgb(28, 69, 152);
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: rgb(174, 186, 197);
+    color: black;
+}
+
+/*Começando a deixar o Site responsivo*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 766px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #logo p {
+        font-size: 1.2rem;
+    }
+
+    .li {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding-right: 50px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #01080e;
+        width: 100%;
+    }
+
+    .mobile-menu #ul .li {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+    main {
+        padding: 130px;
+    }
+
+    .cabecalho h2 {
+        padding-top: 20px;
+    }
+
+    .cabecalho p {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .grid-container-allpro {
+        justify-content: center;
+    }
+
+}
+
