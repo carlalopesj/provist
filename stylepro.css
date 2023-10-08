@@ -236,10 +236,10 @@ main {
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
         padding-bottom: 1rem;
         background-color: #01080e;
         width: 100%;
+        padding-left: 50px;
     }
 
     .mobile-menu #ul .li {
@@ -253,6 +253,12 @@ main {
 
     main {
         padding: 130px;
+        text-align: center;
+    }
+
+    .cabecalho h1 {
+        text-align: center;
+        padding-right: 5px;
     }
 
     .cabecalho h2 {
