@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b380cc3ad9.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylecad.css" />
+</head>
+<body>
+    <h1 id="logo">PROVIST</h1>
+    <div class="container">
+        <div class="card">
+          <h1>Cadastre-se</h1>
+  
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
+  
+          <div class="label-float">
+            <input type="text" id="user" placeholder=" " required />
+            <label id="labelUser" for="user">Usuário</label>
+          </div>
+  
+          <div class="label-float">
+            <input type="email" id="email" placeholder=" " required />
+            <label id="labelEmail" for="email">E-mail</label>
+          </div>
+
+          <div class="label-float">
+            <input type="password" id="senha" placeholder=" " required />
+            <label id="labelSenha" for="senha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+  
+          <div class="label-float">
+            <input type="password" id="confirmSenha" placeholder=" " required />
+            <label id="labelConfirmSenha" for="confirmSenha"
+              >Confirmar Senha</label
+            >
+            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+  
+          <div class="justify-center">
+            <button onclick="cadastrar()">Cadastrar</button>
+          </div>
+        </div>
+      </div>
+  
+      <script src="scriptcad.js"></script>
+</body>
+</html>
