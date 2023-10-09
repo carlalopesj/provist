@@ -252,13 +252,12 @@ main {
     }
 
     main {
-        padding: 130px;
+        padding: 13px;
         text-align: center;
     }
 
-    .cabecalho h1 {
-        text-align: center;
-        padding-right: 5px;
+    .cabecalho {
+        padding-top: 130px;
     }
 
     .cabecalho h2 {
