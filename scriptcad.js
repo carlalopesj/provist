@@ -36,9 +36,9 @@ user.addEventListener('keyup', () => {
 })
 
 email.addEventListener('keyup', () => {
-  if(email.value.length <= 4){
+  if(validatorEmail(email.value) !== true){
     labelEmail.setAttribute('style', 'color: red');
-    labelEmail.innerHTML = 'Email *Insira no minimo 5 caracteres';
+    labelEmail.innerHTML = 'Email *O formato deve ser name@example.com';
     email.setAttribute('style', 'border-color: red');
     validEmail = false;
   } else {
@@ -129,6 +129,13 @@ btnConfirm.addEventListener('click', ()=>{
     inputConfirmSenha.setAttribute('type', 'password');
   }
 })
+
+function validatorEmail(email) {
+  let emailPattern =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  return emailPattern.test(email);
+}
+
 
 
 

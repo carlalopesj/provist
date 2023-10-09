@@ -67,6 +67,13 @@ nav {
 
 }
 
+/*Hover para as sublistas*/
+
+.linkCat a:hover {
+    color:#a0a4a8;
+    font-style: italic;
+}
+
 /*ícone ao lado de projetos*/
 #icon-proj {
     color: #ffffff; 

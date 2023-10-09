@@ -2,6 +2,9 @@ var projects = document.getElementById("projects");
 var categorias =  document.getElementById("exibir-categorias");
 var icone = document.getElementById("icon-proj");
 
+var perfil = document.getElementById('perfil');
+var opcoes = document.getElementById('exibir-opcoes');
+
 projects.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(categorias);
@@ -27,6 +30,33 @@ function visualizar(categorias) {
     }
 }
 
+/* Perfil */
+perfil.addEventListener("click", function(e) {
+    e.preventDefault();
+    visualizar(opcoes);
+});
+icone.addEventListener("click", function(e) {
+    e.preventDefault();
+    visualizar(opcoes);
+});
+
+// Fecha o menu de opções do perfil ao clicar em um link
+const linksOpcoes = document.querySelectorAll("#exibir-opcoes a");
+linksOpcoes.forEach(function (link) {
+    link.addEventListener("click", function () {
+        opcoes.style.display = "none";
+    });
+});
+
+function visualizar(opcoes) {
+    if (opcoes.style.display === "none" || opcoes.style.display === "") {
+        opcoes.style.display = "block";
+    } else {
+        opcoes.style.display = "none";
+    }
+}
+
+
 /*Função para mudar o ícone de abrir e fechar menu responsivo*/
 
 function menuShow() {
@@ -49,3 +79,8 @@ linksDoMenu.forEach(function (link) {
         document.querySelector(".menu-icon").src = "image/menu_white_36dp.svg";
     });
 });
+
+//Função para sair do login/logout
+function logout() {
+    window.location.href = 'index.html';
+}

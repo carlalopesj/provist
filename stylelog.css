@@ -139,10 +139,10 @@ a:hover{
 
  #msgError{
   text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
+  color: #ffffff;
+  background-color: #780909;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   display: none;
 }
 
