@@ -251,10 +251,10 @@ nav {
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
         padding-bottom: 1rem;
         background-color: #01080e;
         width: 100%;
+        padding-left: 50px;
     }
 
     .mobile-menu #ul .li {
