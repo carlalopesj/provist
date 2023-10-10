@@ -27,7 +27,7 @@
             <a class="link"> <i id="icon-proj" class="fa-solid fa-chevron-down" class="link"></i> </a>
           </div>
           <ul id="exibir-categorias">
-            <li class="linkCat"><a href="propage2.html" target="_blank" style="color:#ee7f1e;">Educação</a></li>
+            <li class="linkCat"><a href="propage2.html" style="color:#ee7f1e;">Educação</a></li>
             <li class="linkCat"><a href="#">Categoria 2</a></li>
             <li class="linkCat"><a href="#">Categoria 3</a></li>
             <li class="linkCat"><a href="#">Categoria 4</a></li>
@@ -42,14 +42,12 @@
         </li>
         <li class="li">
           <div class="link-proj">
-            <a href="" id="perfil" class="link">Perfil </a>
-            <a class="link"> <i id="icon-proj" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i>
+            <a href="#" id="perfil" class="link">Perfil </a>
+            <a href="#" id="perfil" class="link"> <i id="icon-proj" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i>
             </a>
           </div>
-          <ul id="exibir-opcoes">
-            <li class="linkOp"><a href="#" id="open-popup">Editar Perfil</a></li>
-            <li class="linkOp"><a href="#" id="open-arc">Meus arquivos</a></li>
-            <li class="linkOp"><a href="#" id="open-proj">Postar Projeto</a></li>
+          <ul id="exibir-opcoes" class="opcoes-menu">
+            <li class="linkOp"><a href="#" id="open-popup">Postar Projeto</a></li>
             <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
           </ul>
         </li>
@@ -59,17 +57,67 @@
         <button onclick="menuShow()"><img class="menu-icon" src="image/menu_white_36dp.svg"></button>
       </div>
 
-      <!---
+      
       <div class="popup" id="popup">
         <div class="popup-content">
           <span class="close" id="close-popup">&times;</span>
           <div class="text-popup">
-            <h2>CONFIGURAÇÕES PERFIL</h2>
-            <p>Aqui vai as configurações de Perfil</p>
+            <section class="upload">
+              <h1>Postar Projeto</h1>
+              <div class="titulo-proj">
+                <label id="labelTitulo" for="titulo">Nome do seu projeto: </label>
+                <input type="text" id="titulo" placeholder=" " required />
+              </div>
+              <div class="descricao-proj">
+                <p>Descrição do seu projeto: </p>
+                <textarea id="descricao" for="descricao" rows="5" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
+              </div>
+              <div class="area-abragente">
+                <p>Em qual dessas categorias o seu projetos se encaixa?</p>
+                <label>
+                  <input type="radio" name="categoria" value="categoria1"> Educação
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria2"> Categoria 2
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria3"> Categoria 3
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria4"> Categoria 4
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria5"> Categoria 5
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria6"> Categoria 6
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria7"> Categoria 7
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="categoria8"> Categoria 8
+                </label>
+              </div>
+              <div class="postar-arquivo">
+                <p>Selecione um arquivo: </p>
+                <form action="" method="post" enctype="multipart/form-data">
+                  <input type="file" name="arquivo" id="arquivoInput">
+                  <label for="arquivoInput" class="custom-file-upload"><i class="fa-solid fa-upload"></i></label>
+              </form>
+              </div>
+              <div class="fazer-upload">
+                <button>Postar</button>
+              </div>
+            </section>
+            <section class="meus-arquivos">
+              <h1>Meus Projetos: </h1>
+              <p>Projeto 1</p>
+              <p>Projeto 2</p>
+            </section>
           </div>
-        </div>
-      <-->
-
+      </div>
+  
 
     </nav>
 

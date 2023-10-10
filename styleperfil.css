@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
 
-/*POP UP */
-/*.popup {
+
+.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -14,11 +14,12 @@
 }
 
 .popup-content {
-    width: 40%;
-    background-color: #aeaabb;
-    padding: 200px;
-    margin-left: 442px;
-    margin-top: 150px;
+    width: 70%;
+    padding: 50px;
+    background-color: #bebdc2;
+    padding-bottom: 180px;
+    margin-left: 230px;
+    margin-top: 100px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -26,8 +27,8 @@
 
 .close {
     position: absolute;
-    top: 180px;
-    right: 480px;
+    top: 140px;
+    right: 260px;
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(24, 19, 95);
@@ -36,6 +37,50 @@
     border-radius: 30%;
     margin-right: 5px;
 }
+
+
+/*Estilização do botão de selecionar um arquivo*/
+#arquivoInput {
+    display: none;
+}
+
+/* Estilo para o rótulo personalizado */
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Estilize o rótulo para parecer um botão */
+.custom-file-upload:hover {
+    background-color: #f0f0f0;
+}
+
+/*Dividindo o PopUp em duas colunas*/
+.text-popup {
+    display: flex; 
+    align-items: stretch; /* Garante que ambas as colunas tenham a mesma altura */
+    padding: 20px; 
+}
+
+.text-popup section {
+    flex: 1; /* As seções preenchem o espaço disponível igualmente */
+    padding: 20px; 
+}
+
+.text-popup .upload {
+    border-right: 1px solid #0e0333; /* Adicione uma linha de separação vertical */
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 766px) {
     .popup-content {
@@ -57,8 +102,8 @@
 
 
 }
-*/
 
+/*
 * {
     box-sizing: border-box;
     padding: 0;
@@ -66,7 +111,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-/*Navegação*/
+/*Navegação*
 header {
     width: 100%;
     position: fixed;
@@ -83,7 +128,7 @@ nav {
     height: 110px;
 }
 
-/*Parte da nossa logo Provist*/
+/*Parte da nossa logo Provist*
 #logo {
     display: flex;
     align-items: center;
@@ -98,7 +143,7 @@ nav {
     font-weight: 600;
 }
 
-/*Divisão das categorias ao clicar em projetos*/
+/*Divisão das categorias ao clicar em projetos*
 .nav ul li {
     position: relative;
 }
@@ -124,7 +169,7 @@ nav {
 
 }
 
-/*Hover para as sublistas*/
+/*Hover para as sublistas*
 
 .linkCat a:hover,
 .linkOp a:hover {
@@ -132,13 +177,13 @@ nav {
     font-style: italic;
 }
 
-/*ícone ao lado de projetos*/
+/*ícone ao lado de projetos*
 #icon-proj {
     color: #ffffff;
     cursor: pointer;
 }
 
-/*Continuação da nav*/
+/*Continuação da nav*
 #ul {
     display: flex;
     align-items: center;
@@ -155,7 +200,7 @@ nav {
     text-decoration: none;
 }
 
-/*Ao passar o mouse: */
+/*Ao passar o mouse: *
 .link-proj:hover .link,
 .link:hover,
 .link-proj:hover #icon-proj {
@@ -168,7 +213,7 @@ nav {
     color: rgb(43, 174, 226);
 }
 
-/*Estrutura principal do Site*/
+/*Estrutura principal do Site*
 main {
     padding-top: 50px;
     background-color: #01080e;
@@ -199,7 +244,7 @@ main {
 
 
 
-/*Começando o Site responsivo*/
+/*Começando o Site responsivo*
 
 .mobile-menu-icon {
     display: none;
@@ -249,3 +294,5 @@ main {
         padding-top: 1.2rem;
     }
 }
+
+*/

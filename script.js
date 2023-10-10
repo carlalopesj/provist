@@ -30,7 +30,7 @@ function visualizar(categorias) {
     }
 }
 
-/* Perfil */
+/* Perfil*/
 perfil.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(opcoes);
@@ -55,7 +55,6 @@ function visualizar(opcoes) {
         opcoes.style.display = "none";
     }
 }
-
 
 /*Função para mudar o ícone de abrir e fechar menu responsivo*/
 
@@ -87,7 +86,7 @@ function logout() {
 
 
 // POP UP 
-/*
+
 const openPopupButton = document.getElementById('open-popup');
 
 const closePopupButton = document.getElementById('close-popup');
@@ -108,4 +107,4 @@ window.addEventListener('click', (event) => {
         popup.style.display = 'none';
     }
 });
-*/
+

@@ -224,6 +224,14 @@ main {
     display: none;
 }
 
+.opcoes-menu {
+    display: none;
+}
+
+.opcoes-menu:hover {
+    display: block;
+}
+
 /*Deixando o Site responsivo*/
 
 
