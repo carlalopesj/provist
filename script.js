@@ -86,7 +86,8 @@ function logout() {
 }
 
 
-// POP UP
+// POP UP 
+/*
 const openPopupButton = document.getElementById('open-popup');
 
 const closePopupButton = document.getElementById('close-popup');
@@ -107,4 +108,4 @@ window.addEventListener('click', (event) => {
         popup.style.display = 'none';
     }
 });
-
+*/

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
+
 /*POP UP */
-.popup {
+/*.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -54,4 +56,196 @@
     }
 
 
+}
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Navegação*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #01080e;
+    align-items: center;
+    height: 110px;
+}
+
+/*Parte da nossa logo Provist*/
+#logo {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+#logo p {
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+/*Divisão das categorias ao clicar em projetos*/
+.nav ul li {
+    position: relative;
+}
+
+#exibir-categorias {
+    padding: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 250px;
+    left: 0;
+    background-color: #01080e;
+    font-weight: 200;
+}
+
+.linkCat a {
+    color: rgba(255, 255, 255, 0.807);
+    text-decoration: none;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+/*Hover para as sublistas*/
+
+.linkCat a:hover,
+.linkOp a:hover {
+    color: #a0a4a8;
+    font-style: italic;
+}
+
+/*ícone ao lado de projetos*/
+#icon-proj {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*Continuação da nav*/
+#ul {
+    display: flex;
+    align-items: center;
+}
+
+.li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+/*Ao passar o mouse: */
+.link-proj:hover .link,
+.link:hover,
+.link-proj:hover #icon-proj {
+    color: rgb(43, 174, 226);
+}
+
+.link-perfil:hover .link,
+.link:hover,
+.link-perfil:hover #icon-perfil {
+    color: rgb(43, 174, 226);
+}
+
+/*Estrutura principal do Site*/
+main {
+    padding-top: 50px;
+    background-color: #01080e;
+    color: white;
+}
+
+
+.divisao {
+    height: 100vh;
+}
+
+.column {
+    padding-top: 100px;
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    border-right: 2px solid #333; 
+    box-sizing: border-box; 
+    text-align: center;
+    background-color: #d4d1d1; 
+    color: black;
+}
+
+.column:last-child {
+    border-right: none; 
+}
+
+
+
+
+/*Começando o Site responsivo*/
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 766px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #logo p {
+        font-size: 1.2rem;
+    }
+
+    .li {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding-right: 50px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #01080e;
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .mobile-menu #ul .li {
+        display: block;
+        padding-top: 1.2rem;
+    }
 }
