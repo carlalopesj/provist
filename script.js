@@ -84,3 +84,27 @@ linksDoMenu.forEach(function (link) {
 function logout() {
     window.location.href = 'index.html';
 }
+
+
+// POP UP
+const openPopupButton = document.getElementById('open-popup');
+
+const closePopupButton = document.getElementById('close-popup');
+
+const popup = document.getElementById('popup');
+
+openPopupButton.addEventListener('click', () => {
+    popup.style.display = 'block';
+});
+
+closePopupButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+// Fechar o pop-up se o usuário clicar fora dele
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+

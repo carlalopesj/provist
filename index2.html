@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b380cc3ad9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="styleperfil.css" />
   <title>ProVist</title>
 </head>
 
@@ -41,21 +42,34 @@
         </li>
         <li class="li">
           <div class="link-proj">
-              <a href="" id="perfil" class="link">Perfil </a>
-              <a class="link"> <i id="icon-proj" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i> </a>
+            <a href="" id="perfil" class="link">Perfil </a>
+            <a class="link"> <i id="icon-proj" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i>
+            </a>
           </div>
           <ul id="exibir-opcoes">
-              <li class="linkOp"><a href="#" >Editar Perfil</a></li>
-              <li class="linkOp"><a href="#">Meus arquivos</a></li>
-              <li class="linkOp"><a href="#">Postar Projeto</a></li>
-              <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
+            <li class="linkOp"><a href="#" id="open-popup">Editar Perfil</a></li>
+            <li class="linkOp"><a href="#" id="open-arc">Meus arquivos</a></li>
+            <li class="linkOp"><a href="#" id="open-proj">Postar Projeto</a></li>
+            <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
           </ul>
-      </li>
+        </li>
       </ul>
 
       <div class="mobile-menu-icon">
         <button onclick="menuShow()"><img class="menu-icon" src="image/menu_white_36dp.svg"></button>
       </div>
+
+      /*
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close" id="close-popup">&times;</span>
+          <div class="text-popup">
+            <h2>CONFIGURAÇÕES PERFIL</h2>
+            <p>Aqui vai as configurações de Perfil</p>
+          </div>
+        </div>
+      */
+
 
     </nav>
 
@@ -65,14 +79,14 @@
           <a href="index2.html#home" class="link">Home</a>
         </li>
         <li class="li">
-            <a href="index2.html#projectos" class="link">Projetos </a> 
+          <a href="index2.html#projectos" class="link">Projetos </a>
         </li>
-          <li class="li">
-            <a href="index2.html#demanda" class="link">Solicitações</a>
-          </li>
-          <li class="li">
-            <a href="perfil.html" class="link">Perfil</a>
-          </li>
+        <li class="li">
+          <a href="index2.html#demanda" class="link">Solicitações</a>
+        </li>
+        <li class="li">
+          <a href="perfil.html" class="link">Perfil</a>
+        </li>
       </ul>
     </div>
 
@@ -90,14 +104,14 @@
     </section>
     <section class="projects" id="projectos">
       <h2 style="text-align: center;">Categorias </h2>
-        <div class="grid-container-projects" style="cursor: pointer;">
-          <a href="propage2.html" target="_blank">
-            <div class="grid-item-p">
-              <i class="fa-solid fa-user-graduate" style="color: #ee7f1e;"></i>
-              <h6 style="color: #ee7f1e;">EDUCAÇÃO</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima enim minus.</p>
-            </div>
-          </a>
+      <div class="grid-container-projects" style="cursor: pointer;">
+        <a href="propage2.html" target="_blank">
+          <div class="grid-item-p">
+            <i class="fa-solid fa-user-graduate" style="color: #ee7f1e;"></i>
+            <h6 style="color: #ee7f1e;">EDUCAÇÃO</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima enim minus.</p>
+          </div>
+        </a>
         <div class="grid-item-p">
           <i class="fa-solid fa-stethoscope" style="color: #ffffff;"></i>
           <h6>CATEGORIA</h6>
