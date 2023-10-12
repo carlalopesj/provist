@@ -1,5 +1,5 @@
+/*PÁGINA PRINCIPAL DO SITE SEM LOGIN - INDEX*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
-
 
 /*Corpo padrão da página*/
 * {
@@ -74,7 +74,7 @@ nav {
     font-style: italic;
 }
 
-/*ícone ao lado de projetos*/
+/*ícone ao lado de projetos >*/
 #icon-proj {
     color: #ffffff; 
     cursor: pointer;
@@ -103,7 +103,7 @@ nav {
 }
 
 
-/*Botão de Logine e Cadastro*/
+/*Botão de Login e Cadastro*/
 
 .li #button button{
     padding: 10px;
@@ -210,7 +210,6 @@ main {
 }
 
 /*Começando o Site responsivo*/
-
 .mobile-menu-icon {
     display: none;
 }
@@ -220,8 +219,6 @@ main {
 }
 
 /*Deixando o Site responsivo*/
-
-
 @media screen and (max-width: 766px) {
 
     nav {

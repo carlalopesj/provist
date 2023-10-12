@@ -1,3 +1,4 @@
+//Configurando opção de visualizar a senha digitada
 let btn = document.querySelector('.fa-eye')
 
 btn.addEventListener('click', ()=>{
@@ -10,6 +11,7 @@ btn.addEventListener('click', ()=>{
   }
 })
 
+//Fungçaõ de entrar, utilizando o user e a senha cadastrada
 function entrar(){
   let usuario = document.querySelector('#usuario')
   let userLabel = document.querySelector('#userLabel')

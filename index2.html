@@ -1,3 +1,4 @@
+<!--QUANDO REALIZAR O LOGIN NA PÁGINA...-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,6 +18,7 @@
         <!---<img src="PROVIST - LogoBl.png" id="p-logo" style="height: 80px;" /> <--->
         <p>PROVIST</p>
       </div>
+      <!--NavBar com os acessos do site, e acesso ao perfil para postagem do projeto-->
       <ul id="ul">
         <li class="li">
           <a href="index2.html#home" class="link">Home</a>
@@ -26,6 +28,7 @@
             <a href="index2.html#projectos" id="projects" class="link">Projetos </a>
             <a class="link"> <i id="icon-proj" class="fa-solid fa-chevron-down" class="link"></i> </a>
           </div>
+          <!--Subdivisão das categorias dos projetos-->
           <ul id="exibir-categorias">
             <li class="linkCat"><a href="propage2.html" style="color:#ee7f1e;">Educação</a></li>
             <li class="linkCat"><a href="#">Categoria 2</a></li>
@@ -46,18 +49,20 @@
             <a href="#" id="perfil" class="link"> <i id="icon-proj" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i>
             </a>
           </div>
+          <!--Opções para postar e sair da conta-->
           <ul id="exibir-opcoes" class="opcoes-menu">
             <li class="linkOp"><a href="#" id="open-popup">Postar Projeto</a></li>
             <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
           </ul>
         </li>
       </ul>
-
+      
+      <!--Responsividade-->
       <div class="mobile-menu-icon">
         <button onclick="menuShow()"><img class="menu-icon" src="image/menu_white_36dp.svg"></button>
       </div>
 
-      
+      <!--PopUp para postar projetos-->
       <div class="popup" id="popup">
         <div class="popup-content">
           <span class="close" id="close-popup">&times;</span>
@@ -87,7 +92,13 @@
                     <option value="categoria8">Categoria 8</option>
                   </select>
                 </div>
-                <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. E caso queria, pode adicionar arquivos extras, como pdf, png, etc</p>
+                <div class="contatos-proj">
+                  <label for="telefone">Telefone:</label>
+                  <input type="tel" id="telefone" name="telefone" required><br>
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required><br>
+                </div>
+                <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. E caso queira, pode adicionar arquivos extras, como pdf, png, etc</p>
                 <a href="image/modelo.docx">Modelo Projeto</a><i class="fa-solid fa-arrow-pointer" style="color: #ffffff; padding-left: 5px;"></i>
                 <div class="postar-arquivo">
                   <form action="" method="post" enctype="multipart/form-data">
@@ -95,19 +106,19 @@
                   </form>
                 </div>
                 <div class="fazer-upload">
-                  <button>Postar</button>
+                  <button id="submit">Postar</button>
                 </div>
               </form>
             </section>
             <section class="meus-arquivos">
               <h1>Meus Projetos: </h1>
-              <p>Projeto 1</p>
-              <p style="background-color: rgb(102, 9, 9)">Excluir</p>
+              <div class="editar-lixo">
+                <p>Projeto 1</p></h1><i class="fa-solid fa-trash-can" style="color: #fcfcfd;"></i><i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+              </div>
             </section>
           </div>
       </div>
   
-
     </nav>
 
     <div class="mobile-menu">
@@ -130,6 +141,7 @@
   </header>
 
   <main>
+    <!--Página de apresentação do site-->
     <section class="home" id="home">
       <div class="text-home">
         <h1>Lorem ipsum dolor sit.</h1>
@@ -139,10 +151,11 @@
         <img src="imgpng.png" />
       </div>
     </section>
+    <!--Parte com as categorias dos projetos-->
     <section class="projects" id="projectos">
       <h2 style="text-align: center;">Categorias </h2>
       <div class="grid-container-projects" style="cursor: pointer;">
-        <a href="propage2.html" target="_blank">
+        <a href="propage2.html">
           <div class="grid-item-p">
             <i class="fa-solid fa-user-graduate" style="color: #ee7f1e;"></i>
             <h6 style="color: #ee7f1e;">EDUCAÇÃO</h6>
@@ -187,6 +200,7 @@
       </div>
     </section>
     <section class="info" id="demanda">
+      <!--Solicitações de pedidos de serviços-->
       <h2 style="text-align: center;">Solicitações</h2>
       <div class="grid-container-request">
         <div class="grid-item-r">
@@ -207,11 +221,7 @@
         </div>
       </div>
     </section>
-    <section>
-
-    </section>
   </main>
-
 
   <script src="scriptperfil.js"></script>
   <script src="script.js"></script>

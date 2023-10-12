@@ -1,6 +1,6 @@
+//Criando as variáveis e obetendo os dados html
 let btn = document.querySelector('#verSenha');
 let btnConfirm = document.querySelector('#verConfirmSenha');
-
 
 let user = document.querySelector('#user');
 let labelUser = document.querySelector('#labelUser');
@@ -21,7 +21,7 @@ let validConfirmSenha = false;
 let msgError = document.querySelector('#msgError');
 let msgSuccess = document.querySelector('#msgSuccess');
 
-
+//Condições para o nome do usuário e sua validação
 user.addEventListener('keyup', () => {
   if(user.value.length <= 2){
     labelUser.setAttribute('style', 'color: red');
@@ -36,6 +36,7 @@ user.addEventListener('keyup', () => {
   }
 })
 
+//Condições sobre o e-mail e informações relevantes
 email.addEventListener('keyup', () => {
   if(validatorEmail(email.value) !== true){
     labelEmail.setAttribute('style', 'color: red');
@@ -50,6 +51,13 @@ email.addEventListener('keyup', () => {
   }
 })
 
+function validatorEmail(email) {
+  let emailPattern =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  return emailPattern.test(email);
+}
+
+//Condições sobre a senha e confirmar senha e informações relevantes
 senha.addEventListener('keyup', () => {
   if(senha.value.length <= 5){
     labelSenha.setAttribute('style', 'color: red');
@@ -78,6 +86,7 @@ confirmSenha.addEventListener('keyup', () => {
   }
 })
 
+//Função para realizar o cadastro, criando uma lista e usando o localStorage para armazenar informações de email, senha e user
 function cadastrar(){
   if(validUser && validEmail && validSenha && validConfirmSenha){
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
@@ -112,6 +121,7 @@ function cadastrar(){
 
 }
 
+//Adicionando evento para o botão
 btn.addEventListener('click', ()=>{
   let inputSenha = document.querySelector('#senha');
   
@@ -132,11 +142,7 @@ btnConfirm.addEventListener('click', ()=>{
   }
 })
 
-function validatorEmail(email) {
-  let emailPattern =
-    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-  return emailPattern.test(email);
-}
+
 
 
 

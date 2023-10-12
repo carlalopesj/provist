@@ -1,3 +1,4 @@
+<!-- Página feita para o perfil próprio para celular, seguindo o modelo do popup das outras páginas, quando se está logado, para que possa postar o proejto -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -33,7 +34,13 @@
           <option value="categoria8">Categoria 8</option>
         </select>
       </div>
-      <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. E caso queria, pode adicionar arquivos extras, como pdf, png, etc</p>
+      <div class="contatos-proj">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+      </div>
+      <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. E caso queira, pode adicionar arquivos extras, como pdf, png, etc</p>
       <a href="image/modelo.docx">Modelo Projeto</a><i class="fa-solid fa-arrow-pointer" style="color: #ffffff; padding-left: 5px;"></i>
       <div class="postar-arquivo">
         <form action="" method="post" enctype="multipart/form-data">
@@ -47,8 +54,9 @@
   </section>
   <section class="meus-arquivos">
     <h1>Meus Projetos: </h1>
-    <p>Projeto 1</p>
-    <p style="background-color: rgb(168, 7, 7)">Excluir</p>
+    <div class="editar-lixo">
+      <p>Projeto 1</p></h1><i class="fa-solid fa-trash-can" style="color: #fcfcfd;"></i><i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+    </div>
   </section>
 </body>
 </html>

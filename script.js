@@ -1,3 +1,4 @@
+//Declarando as variáveis e atribuindo seus valores html
 var projects = document.getElementById("projects");
 var categorias =  document.getElementById("exibir-categorias");
 var icone = document.getElementById("icon-proj");
@@ -5,6 +6,7 @@ var icone = document.getElementById("icon-proj");
 var perfil = document.getElementById('perfil');
 var opcoes = document.getElementById('exibir-opcoes');
 
+//Quando clicar em projetos aparecer um submenu, dividido em categorias
 projects.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(categorias);
@@ -22,6 +24,7 @@ linksCategorias.forEach(function (link) {
     });
 });
 
+//Função para realizar a visualizção
 function visualizar(categorias) {
     if (categorias.style.display === "none" || categorias.style.display === "") {
         categorias.style.display = "block";
@@ -48,6 +51,7 @@ linksOpcoes.forEach(function (link) {
     });
 });
 
+//Função para visualizar as opções quando clicado em perfil
 function visualizar(opcoes) {
     if (opcoes.style.display === "none" || opcoes.style.display === "") {
         opcoes.style.display = "block";
@@ -85,7 +89,7 @@ function logout() {
 }
 
 
-// POP UP 
+//POP UP com as funções que se pode fazer quando logado (no caso postar um projeto) 
 
 const openPopupButton = document.getElementById('open-popup');
 

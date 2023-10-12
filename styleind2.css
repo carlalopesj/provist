@@ -1,3 +1,4 @@
+/*PÁGINA DE CADA PROJETO QUANDO SE ESTÁ LOGADO - INDIVIDUAL 2*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dela+Gothic+One&family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&family=Young+Serif&display=swap');
 /*
 font-family: 'Dela Gothic One', cursive;
@@ -99,7 +100,6 @@ nav {
 }
 
 /*Hover para as sublistas*/
-
 .linkCat a:hover, .linkOp a:hover {
     color:#a0a4a8;
     font-style: italic;
@@ -134,8 +134,7 @@ nav {
 }
 
 
-/*Botão de Logine e Cadastro*/
-
+/*Botão de Login e Cadastro*/
 .li #button button{
     padding: 10px;
     background-color: rgb(43, 174, 226);
@@ -192,6 +191,7 @@ nav {
     color:#a0a4a8;
 }
 
+/*Botões de investir e colaborar*/
 #investe {
     background-color: rgb(6, 177, 6);
     color: white;
@@ -210,6 +210,7 @@ nav {
     background-color: rgb(123, 123, 14);
 }
 
+/*Contatos*/
 .telefone {
     display: flex;
     flex-direction: row;
@@ -240,7 +241,6 @@ nav {
 }
 
 /*Começando o Site responsivo*/
-
 .mobile-menu-icon {
     display: none;
 }
@@ -250,8 +250,6 @@ nav {
 }
 
 /*Deixando o Site responsivo*/
-
-
 @media screen and (max-width: 766px) {
 
     nav {
@@ -306,6 +304,5 @@ nav {
         margin: 0 auto;
         padding-bottom: 20px;
     }
-
 
 }

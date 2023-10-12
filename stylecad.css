@@ -1,3 +1,4 @@
+/*PÁGINA DE CADASTRO*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
 
 * {
@@ -6,17 +7,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*Texto inicial com a logo PROVIST*/
 #logo {
     color: white;
     padding-top: 50px;
     font-size: 3rem;
 }
 
+/*Corpo da página*/
 body {
     background-color: #01080e;
     background-attachment: fixed
 }
 
+/*Parte como um todo*/
 .container {
     display: flex;
     justify-content: center;
@@ -24,6 +28,7 @@ body {
     margin-top: 50px;
 }
 
+/*Parte com o conteúdo*/
 .card {
     background-color: #ffffffaf;
     padding: 30px;
@@ -33,12 +38,14 @@ body {
     margin-bottom: 20px;
 }
 
+/*Inicío com a palavra "Cadastro"*/
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #0b031e
 }
 
+/*Estilizando os inputs*/
 .label-float input {
     width: 100%;
     padding: 5px 5px;
@@ -62,6 +69,7 @@ h1 {
     margin-bottom: 5%;
 }
 
+/*Efeito*/
 .label-float input:focus {
     border-bottom: 2px solid #4038a0;
 }
@@ -83,7 +91,7 @@ h1 {
     color: #4038a0;
 }
 
-
+/*Botão de cadastro*/
 button {
     background-color: transparent;
     border-color: #272262;
@@ -108,6 +116,7 @@ button:hover {
     justify-content: center;
 }
 
+/*Olho que permite ver a senha digitada*/
 .fa-eye {
     position: absolute;
     top: 15px;
@@ -116,6 +125,7 @@ button:hover {
     color: #ffffff;
 }
 
+/*Mensagem caso dê erro*/
 #msgError {
     text-align: center;
     color: #ffffff;
@@ -125,6 +135,7 @@ button:hover {
     display: none;
 }
 
+/*Mensagem de sucesso*/
 #msgSuccess {
     text-align: center;
     color: #ffffff;
@@ -134,6 +145,7 @@ button:hover {
     display: none;
 }
 
+/*Responsivo*/
 @media screen and (max-width: 766px) {
 
     #logo {
