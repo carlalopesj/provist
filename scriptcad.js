@@ -21,6 +21,7 @@ let validConfirmSenha = false;
 let msgError = document.querySelector('#msgError');
 let msgSuccess = document.querySelector('#msgSuccess');
 
+
 user.addEventListener('keyup', () => {
   if(user.value.length <= 2){
     labelUser.setAttribute('style', 'color: red');
@@ -108,6 +109,7 @@ function cadastrar(){
     msgSuccess.innerHTML = '';
     msgSuccess.setAttribute('style', 'display: none');
   }
+
 }
 
 btn.addEventListener('click', ()=>{

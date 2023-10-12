@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <!--
     <header>
         <nav id="nav-bar" class="nav">
             <div id="logo">
-                <!---<img src="PROVIST - LogoBl.png" id="p-logo" style="height: 80px;" /> <--->
+                <-<img src="PROVIST - LogoBl.png" id="p-logo" style="height: 80px;" /> 
                 <p>PROVIST</p>
             </div>
             <ul id="ul">
@@ -93,6 +94,90 @@
 
     <script src="scriptperfil.js"></script>
     <script src="script.js"></script>
+<--->
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" id="close-popup">&times;</span>
+      <div class="text-popup">
+        <section class="upload">
+          <h1>Postar Projeto</h1>
+          <div class="titulo-proj">
+            <p>Nome do seu projeto: </p>
+            <input type="text" id="titulo" placeholder=" " required />
+          </div>
+          <div class="descricao-proj">
+            <p style="font-size: 1rem;">Descrição do seu projeto: </p>
+            <textarea id="descricao" for="descricao" rows="5" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
+          </div>
+          <p style="padding-bottom: 20px;">Em qual dessas categorias o seu projetos se encaixa?</p>
+          <div class="area-abragente">
+            <label>
+              <input type="radio" name="categoria" value="categoria1"> Educação
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria2"> Categoria 2
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria3"> Categoria 3
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria4"> Categoria 4
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria5"> Categoria 5
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria6"> Categoria 6
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria7"> Categoria 7
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="categoria8"> Categoria 8
+            </label>
+          </div>
+          <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. E caso queria, pode adicionar arquivos extras, como pdf, png, etc</p>
+          <a href="image/modelo.docx">Modelo Projeto</a><i class="fa-solid fa-arrow-pointer" style="color: #ffffff; padding-left: 5px;"></i>
+          <div class="postar-arquivo">
+            <p>Selecione um arquivo: </p>
+            <form action="" method="post" enctype="multipart/form-data">
+              <input type="file" name="arquivo" id="arquivoInput">
+              <label for="arquivoInput" class="custom-file-upload"><i class="fa-solid fa-upload"></i></label>
+            </form>
+          </div>
+          <div class="fazer-upload">
+            <button>Postar</button>
+          </div>
+        </section>
+        <section class="meus-arquivos">
+          <h1>Meus Projetos: </h1>
+          <p>Projeto 1</p>
+          <p>Projeto 2</p>
+        </section>
+      </div>
+  </div>
+
+
+</nav>
+
+<div class="mobile-menu">
+  <ul id="ul">
+    <li class="li">
+      <a href="index2.html#home" class="link">Home</a>
+    </li>
+    <li class="li">
+      <a href="index2.html#projectos" class="link">Projetos </a>
+    </li>
+    <li class="li">
+      <a href="index2.html#demanda" class="link">Solicitações</a> 
+    </li>
+    <li class="li">
+      <a href="perfil.html" class="link">Perfil</a>
+    </li>
+  </ul>
+</div>
+
 </body>
 
 </html>

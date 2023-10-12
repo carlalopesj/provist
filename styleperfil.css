@@ -15,11 +15,11 @@
 
 .popup-content {
     width: 70%;
-    padding: 50px;
+    padding: 20px;
     background-color: #bebdc2;
-    padding-bottom: 180px;
+    padding-bottom: 10px;
     margin-left: 230px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -27,7 +27,7 @@
 
 .close {
     position: absolute;
-    top: 140px;
+    top: 80px;
     right: 260px;
     font-size: 20px;
     cursor: pointer;
@@ -50,6 +50,8 @@
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
 }
 
 /* Estilize o rótulo para parecer um botão */
@@ -57,35 +59,117 @@
     background-color: #f0f0f0;
 }
 
+.postar-arquivo {
+    display: flex;
+    flex-direction: row;
+}
+
 /*Dividindo o PopUp em duas colunas*/
 .text-popup {
     display: flex; 
     align-items: stretch; /* Garante que ambas as colunas tenham a mesma altura */
-    padding: 20px; 
+    padding: 10px; 
 }
 
 .text-popup section {
-    flex: 1; /* As seções preenchem o espaço disponível igualmente */
+    flex: 7; /* As seções preenchem o espaço disponível igualmente */
     padding: 20px; 
+}
+
+.text-popup section:nth-child(2) {
+    flex: 3;
+    padding: 10px;
+}
+
+.text-popup h1 {
+    font-size: 1.6rem;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .text-popup .upload {
     border-right: 1px solid #0e0333; /* Adicione uma linha de separação vertical */
+    text-align: start;
 }
 
+#labelTitulo, #titulo {
+    padding: 5px;
+    margin-top: 7px;
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
 
+#descricao {
+    border-radius: 8px;
+    margin-top: 7px;
+    padding: 5px;   
+    font-style: italic;
+    color:#b7b5b5;
+    margin-bottom: 15px;
+    resize: none;
+}
 
+.area-abragente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
+#dica-arc {
+    padding-top: 15px;
+    padding-bottom: 8px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
 
+.upload a{
+    text-decoration: none;
+    color: rgb(3, 1, 22);
+    background-color: rgb(231, 229, 234);
+    padding: 3px;
+    border-radius: 8px;
+}
+.postar-arquivo {
+    padding-top: 15px;
+}
 
+.fazer-upload button {
+    padding: 8px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 155px;
+}
 
+.fazer-upload button:hover {
+    color: white;
+    background-color: #0e0333;
+}
 
-
+.meus-arquivos p {
+    border-radius: 8px;
+    background-color: #0e0333;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
 
 @media screen and (max-width: 766px) {
     .popup-content {
-        margin-left: 40px;
-        margin-top: 120px;
+        margin-left: 35px;
+        margin-top: 30px;
+        width: 85%;
+        padding: 5px;
     }
 
     .text-popup {
@@ -96,8 +180,18 @@
         color: white;
     }
 
+    .text-popup h1 {
+        padding-top: 1px;
+        font-size: 1.1rem;
+    }
+
     .close {
-        right: 80px;
+        top: 50px;
+        right: 60px;
+    }
+
+    .fazer-upload button {
+        margin-left: 95px;
     }
 
 
