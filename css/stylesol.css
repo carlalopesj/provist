@@ -239,4 +239,28 @@ main {
     .open {
         display: block;
     }
+
+    .principal {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .info-pedido {
+        padding: 15px;
+        text-align: justify;
+        margin-right: 10px;
+    }
+
+    main {
+        padding-right: 130px;
+        padding-bottom: 10px;
+    }
+    
+    /*Lugar onde ficarão os anexos de arquivos*/
+    .arquivos-pedido fieldset {
+        padding: 100px;
+    }
 }

@@ -164,6 +164,10 @@ label {
     background-color: #0e0333;
 }
 
+.meus-arquivos {
+    padding-bottom: 30px;
+}
+
 /*Parte de editar ou excluir o projeto já postado*/
 .editar-lixo {
     display: flex;
@@ -179,6 +183,22 @@ label {
 }
 .editar-lixo p {
     padding-right: 130px;
+}
+
+/*Botão de sair da conta*/
+body a {
+    text-decoration: none;
+    background-color: #0e0333;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 150px;
+    font-size: 1.6rem;
+}
+body a:hover {
+    background-color: white;
+    color:rgb(24, 19, 95)
 }
 
 /*Responsividade*/

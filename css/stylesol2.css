@@ -1,4 +1,4 @@
-/*PÁGINA DE CADA DEMANDA DO SITE SEM LOGIN - SOLICIT*/
+/*PÁGINA DE CADA DEMANDA DO SITE COM LOGIN - SOLICIT2*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
 
 /*Corpo padrão da página*/
@@ -201,6 +201,14 @@ main {
     display: none;
 }
 
+.opcoes-menu {
+    display: none;
+}
+
+.opcoes-menu:hover {
+    display: block;
+}
+
 /*Deixando o Site responsivo*/
 @media screen and (max-width: 766px) {
 
@@ -260,7 +268,7 @@ main {
     }
 
     main {
-        padding-right: 120px;
+        padding-right: 130px;
         padding-bottom: 10px;
     }
     
