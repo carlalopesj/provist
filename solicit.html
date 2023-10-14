@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b380cc3ad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/stylesol.css" />
+    <title>Demandas</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar" class="nav">
+          <div id="logo">
+            <!---<img src="PROVIST - LogoBl.png" id="p-logo" style="height: 80px;" /> <--->
+            <p>PROVIST</p>
+          </div>
+          <!--NavBar com opções de acesso-->
+          <ul id="ul">
+            <li class="li">
+              <a href="#home" class="link">Home</a>
+            </li>
+            <li class="li">
+              <div class="link-proj">
+                <a href="#projects" id="projects" class="link">Projetos </a>
+                <a class="link"> <i id="icon-proj" class="fa-solid fa-chevron-down" class="link"></i> </a>
+              </div>
+              <!--SubMenu para quando se clicar em Projeto-->
+              <ul id="exibir-categorias">
+                <li class="linkCat"><a href="propage.html" style="color:#ee7f1e;">Educação</a></li>
+                <li class="linkCat"><a href="#">Categoria 2</a></li>
+                <li class="linkCat"><a href="#">Categoria 3</a></li>
+                <li class="linkCat"><a href="#">Categoria 4</a></li>
+                <li class="linkCat"><a href="#">Categoria 5</a></li>
+                <li class="linkCat"><a href="#">Categoria 6</a></li>
+                <li class="linkCat"><a href="#">Categoria 7</a></li>
+                <li class="linkCat"><a href="#">Categoria 8</a></li>
+              </ul>
+            </li>
+            <li class="li">
+              <a href="#demanda" class="link">Solicitações</a>
+            </li>
+            <li class="li">
+              <a href="login.html" class="link">Entrar</a>
+            </li>
+            <li class="li">
+              <a href="cadastro.html" class="link" id="button"><button>Cadastrar</button></a>
+            </li>
+          </ul>
+          <!--Parte para deixar o site responsivo, criando um menu com os mesmos tópicos-->
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="menu-icon" src="image/menu_white_36dp.svg"></button>
+          </div>
+        </nav>
+    
+        <div class="mobile-menu">
+          <ul id="ul">
+            <li class="li">
+              <a href="index.html#home" class="link">Home</a>
+            </li>
+            <li class="li">
+                <a href="index.html#projectos" class="link">Projetos </a> 
+            </li>
+              <li class="li">
+                <a href="index.html#demanda" class="link">Solicitações</a>
+              </li>
+              <li class="li">
+                <a href="login.html" class="link">Entrar</a>
+              </li>
+              <li class="li">
+                <a href="cadastro.html" class="link" id="button"><button>Cadastrar</button></a>
+              </li>
+          </ul>
+        </div>
+      </header>
+      <!--Parte das demandas individuais-->
+      <main>
+        <div class="principal">
+            <div class="info-pedido">
+                <!--Mostrando as páginas de como ficaria a de cada pedido-->
+                <h1>Título do pedido</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur magni quaerat, asperiores libero culpa. Molestiae nemo aut doloribus harum. Commodi esse molestiae architecto explicabo distinctio autem maiores, rerum eligendi.</p>
+                <h3>Categoria: <span>Educação</span></h3>
+                <h3>Prazo: <span>Indefinido</span></h3>
+                <div class="contatos">
+                    <div class="telefone">
+                        <i class="fa-solid fa-phone" style="color: #a0a4a8;"></i>
+                        <p>(61)1234-5678</p>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope" style="color: #a0a4a8;"></i>
+                        <p>email@contato.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arquivos-pedido">
+                <fieldset>
+                    <h5>Anexos de Arquivos</h5>
+                </fieldset>
+            </div>
+      </main>
+
+      <script href="./js/script.js"></script>
+</body>
+</html>

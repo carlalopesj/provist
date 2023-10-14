@@ -1,4 +1,4 @@
-/*ESTILIZAÇÃO DA PARTE JÁ LOGADO - PERFIL - INDEX2*/
+/*PÁGINA DE CADA DEMANDA DO SITE SEM LOGIN - SOLICIT*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
 
 /*Corpo padrão da página*/
@@ -127,90 +127,69 @@ nav {
 
 /*Estrutura principal do Site*/
 main {
-    padding-top: 50px;
-    background-color: #01080e;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
 }
 
-/*Início/Home*/
-.home {
+.principal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    padding-left: 80px;
 }
 
-.text-home h1 {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 600;
-    font-size: 3.2rem;
+.principal p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 200;
+    text-align: justify;
 }
 
-/*Parte dos projetos e categorias*/
-.grid-container-projects {
-    display: grid;
-    padding: 30px;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; 
+/*Texto com informações do pedido referido*/
+.info-pedido {
+    padding: 100px;
+    text-align: justify;
+    margin-right: 150px;
 }
 
-.grid-container-projects h6 {
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 7px;
-}
-
-.grid-container-projects p {
-    font-size: 1rem;
+.info-pedido span {
     font-weight: 300;
-    padding: 7px;
+    color:#06253f;
 }
 
-/*Cada categoria diferente*/
-.grid-item-p {
-    border: 1px solid #1198c9;
-    padding: 20px;
+/*Parte de contatos*/
+.telefone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
+    color: #a0a4a8;
+    padding-top: 20px;
 }
 
-.grid-container-projects a {
-    text-decoration: none;
-    color: white;
+.telefone p, .email p {
+    padding: 10px;
 }
 
-/*Parte das solicitações/serviços pedidos*/
-#demanda {
-    padding-top: 50px;
-}
-
-.grid-container-request {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 30px;
-    gap: 10px;
-}
-
-.grid-container-request h6 {
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 7px;
-}
-
-.grid-container-request p {
-    font-size: 1rem;
-    font-weight: 300;
-    padding: 7px;
-}
-
-/*Cada solicitação*/
-.grid-item-r {
-    border: 1px solid #ccc;
-    padding: 20px;
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
-    background-color: #1b1b1d;
+    color: #a0a4a8;
+}
+
+/*Lugar onde ficarão os anexos de arquivos*/
+.arquivos-pedido fieldset {
+    background-color: rgb(206, 206, 208);
+    border: none;
+    border-radius: 10px;
+    padding: 120px;
+    text-align: center;
 }
 
 /*Começando o Site responsivo*/
@@ -220,14 +199,6 @@ main {
 
 .mobile-menu {
     display: none;
-}
-
-.opcoes-menu {
-    display: none;
-}
-
-.opcoes-menu:hover {
-    display: block;
 }
 
 /*Deixando o Site responsivo*/
@@ -270,33 +241,32 @@ main {
         padding-top: 1.2rem;
     }
 
-    .home {
-        margin-top: 80px;
-        padding: 8px;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .img-home img {
-        width: 100%;
-    }
-
-    .grid-container-projects {
-        display: grid;
-        padding: 30px;
-        grid-template-rows: 1fr 1fr; 
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-    }
-
     .open {
         display: block;
     }
 
+    .principal {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .info-pedido {
+        padding: 15px;
+        text-align: justify;
+        margin-right: 10px;
+    }
+
+    main {
+        padding-right: 120px;
+        padding-bottom: 10px;
+    }
+    
+    /*Lugar onde ficarão os anexos de arquivos*/
+    .arquivos-pedido fieldset {
+        padding: 100px;
+    }
 
 }
-
-
-
-
-
