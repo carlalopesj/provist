@@ -13,6 +13,7 @@ btn.addEventListener('click', ()=>{
 
 //Fungçaõ de entrar, utilizando o user e a senha cadastrada
 function entrar(){
+  console.log('Função entrar foi chamada.');
   let usuario = document.querySelector('#usuario')
   let userLabel = document.querySelector('#userLabel')
   
@@ -61,4 +62,11 @@ function entrar(){
     usuario.focus()
   }
   
+}
+
+//Visualizar o localStorage
+for (var i = 0; i < localStorage.length; i++) {
+  var key = localStorage.key(i);
+  var value = localStorage.getItem(key);
+  console.log(key + ': ' + value);
 }

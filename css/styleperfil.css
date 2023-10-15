@@ -186,7 +186,7 @@ label {
 }
 
 /*Botão de sair da conta*/
-body a {
+.botao-sair a {
     text-decoration: none;
     background-color: #0e0333;
     color: white;
@@ -196,7 +196,7 @@ body a {
     margin-left: 150px;
     font-size: 1.6rem;
 }
-body a:hover {
+.botao-sair a:hover {
     background-color: white;
     color:rgb(24, 19, 95)
 }

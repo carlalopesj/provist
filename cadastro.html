@@ -16,42 +16,41 @@
   
           <div id="msgError"></div>
           <div id="msgSuccess"></div>
-          
-          <label>
-            <input type="radio" name="classe" value="coordenacao"> Coordenação
-          </label>
-          <label>
-              <input type="radio" name="classe" value="aluno" style="margin-left: 80px; color: #01080e"> Aluno
-          </label>
-
-          <div class="label-float">
-            <input type="text" id="user" placeholder=" " required />
-            <label id="labelUser" for="user">Usuário</label>
-          </div>
+            <label>
+              <input type="radio" name="classe-tipo" value="coordenacao" id="tipo-coordenador"> Coordenação
+            </label>
+            <label>
+                <input type="radio" name="classe-tipo" value="aluno" style="margin-left: 80px; color: #01080e" id="tipo-aluno" checked> Aluno
+            </label>
   
-          <div class="label-float">
-            <input type="email" id="email" placeholder=" " required />
-            <label id="labelEmail" for="email">E-mail</label>
-            <small id="textEmail"></small>
-          </div>
-
-          <div class="label-float">
-            <input type="password" id="senha" placeholder=" " required />
-            <label id="labelSenha" for="senha">Senha</label>
-            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-          </div>
+            <div class="label-float">
+              <input type="text" id="user" placeholder=" " required />
+              <label id="labelUser" for="user">Usuário</label>
+            </div>
+    
+            <div class="label-float">
+              <input type="email" id="email" placeholder=" " required />
+              <label id="labelEmail" for="email">E-mail</label>
+              <small id="textEmail"></small>
+            </div>
   
-          <div class="label-float">
-            <input type="password" id="confirmSenha" placeholder=" " required />
-            <label id="labelConfirmSenha" for="confirmSenha"
-              >Confirmar Senha</label
-            >
-            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
-          </div>
-  
-          <div class="justify-center">
-            <button onclick="cadastrar()" id="cadastrar">Cadastrar</button>
-          </div>
+            <div class="label-float">
+              <input type="password" id="senha" placeholder=" " required />
+              <label id="labelSenha" for="senha">Senha</label>
+              <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+    
+            <div class="label-float">
+              <input type="password" id="confirmSenha" placeholder=" " required />
+              <label id="labelConfirmSenha" for="confirmSenha"
+                >Confirmar Senha</label
+              >
+              <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+    
+            <div class="justify-center">
+              <button onclick="cadastrar()" id="cadastrar">Cadastrar</button>
+            </div>
         </div>
       </div>
   

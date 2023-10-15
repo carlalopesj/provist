@@ -1,6 +1,6 @@
 //Criando as variáveis e obetendo os dados html
-let btn = document.querySelector('#verSenha');
-let btnConfirm = document.querySelector('#verConfirmSenha');
+let botao = document.querySelector('#verSenha');
+let botaoConfirm = document.querySelector('#verConfirmSenha');
 
 let user = document.querySelector('#user');
 let labelUser = document.querySelector('#labelUser');
@@ -122,7 +122,7 @@ function cadastrar(){
 }
 
 //Adicionando evento para o botão
-btn.addEventListener('click', ()=>{
+botao.addEventListener('click', ()=>{
   let inputSenha = document.querySelector('#senha');
   
   if(inputSenha.getAttribute('type') == 'password'){
@@ -132,7 +132,7 @@ btn.addEventListener('click', ()=>{
   }
 })
 
-btnConfirm.addEventListener('click', ()=>{
+botaoConfirm.addEventListener('click', ()=>{
   let inputConfirmSenha = document.querySelector('#confirmSenha');
   
   if(inputConfirmSenha.getAttribute('type') == 'password'){
@@ -142,7 +142,14 @@ btnConfirm.addEventListener('click', ()=>{
   }
 })
 
+//Visualizar o localStorage
+for (var i = 0; i < localStorage.length; i++) {
+  var key = localStorage.key(i);
+  var value = localStorage.getItem(key);
+  console.log(key + ': ' + value);
+}
 
+localStorage.clear();
 
 
 
