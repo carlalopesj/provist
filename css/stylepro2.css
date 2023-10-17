@@ -18,7 +18,6 @@ font-family: 'Young Serif', serif;
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #01080e;
 }
 
 /*Navegação*/
@@ -35,6 +34,7 @@ nav {
     padding: 10px;
     align-items: center;
     height: 110px;
+    background-color: #01080e;
 }
 
 /*Parte da nossa logo Provist*/
@@ -155,6 +155,7 @@ main {
     color: white;
     padding: 170px;
     text-align: center;
+    background-color: #01080e;
 }
 /*Textos informativos*/
 .cabecalho h1{
