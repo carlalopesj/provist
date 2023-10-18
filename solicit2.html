@@ -49,9 +49,9 @@
                 style="padding-left: 10px;"></i>
             </a>
           </div>
-          <!--Opções para postar e sair da conta-->
+          <!--Opções para postar, fazer pedido e sair da conta-->
           <ul id="exibir-opcoes" class="opcoes-menu">
-            <li class="linkOp"><a href="#" id="open-popup">Postar Projeto</a></li>
+            <li class="linkOp"><a href="perfil.html" target="_blank">Ações</a></li>
             <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
           </ul>
         </li>
@@ -62,68 +62,6 @@
         <button onclick="menuShow()"><img class="menu-icon" src="image/menu_white_36dp.svg"></button>
       </div>
 
-      <!--PopUp para postar projetos-->
-      <div class="popup" id="popup">
-        <div class="popup-content">
-          <span class="close" id="close-popup">&times;</span>
-          <div class="text-popup">
-            <section class="upload">
-              <h1>Postar Projeto</h1>
-              <form id="seu-formulario">
-                <div class="titulo-proj">
-                  <p>Nome do seu projeto: </p>
-                  <input type="text" id="titulo" placeholder=" " required />
-                </div>
-                <div class="descricao-proj">
-                  <p style="font-size: 1rem;">Descrição do seu projeto: </p>
-                  <textarea id="descricao" for="descricao" rows="5"
-                    cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
-                </div>
-                <div class="area-abragente">
-                  <label for="categoria">Selecione a área abrangente:</label>
-                  <select id="categoria" name="categoria">
-                    <option value="cat" disabled selected>Categorias</option>
-                    </optgroup>
-                    <option value="categoria1">Educação</option>
-                    <option value="categoria2">Categoria 2</option>
-                    <option value="categoria3">Categoria 3</option>
-                    <option value="categoria4">Categoria 4</option>
-                    <option value="categoria5">Categoria 5</option>
-                    <option value="categoria6">Categoria 6</option>
-                    <option value="categoria7">Categoria 7</option>
-                    <option value="categoria8">Categoria 8</option>
-                  </select>
-                </div>
-                <div class="contatos-proj">
-                  <label for="telefone">Telefone:</label>
-                  <input type="tel" id="telefone" name="telefone" required><br>
-                  <label for="email">E-mail:</label>
-                  <input type="email" id="email" name="email" required><br>
-                </div>
-                <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no
-                  botão de selecionar arquivo. E caso queira, pode adicionar arquivos extras, como pdf, png, etc</p>
-                <a href="image/modelo.docx">Modelo Projeto</a><i class="fa-solid fa-arrow-pointer"
-                  style="color: #ffffff; padding-left: 5px;"></i>
-                <div class="postar-arquivo">
-                  <form action="" method="post" enctype="multipart/form-data">
-                    <input type="file" id="arquivo" name="arquivo">
-                  </form>
-                </div>
-                <div class="fazer-upload">
-                  <button id="submit">Postar</button>
-                </div>
-              </form>
-            </section>
-            <section class="meus-arquivos">
-              <h1>Meus Projetos: </h1>
-              <div class="editar-lixo">
-                <p>Projeto 1</p>
-                </h1><i class="fa-solid fa-trash-can" style="color: #fcfcfd;"></i><i class="fa-solid fa-pencil"
-                  style="color: #ffffff;"></i>
-              </div>
-            </section>
-          </div>
-        </div>
     </nav>
 
     <div class="mobile-menu">
@@ -153,7 +91,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur magni quaerat, asperiores
           libero culpa. Molestiae nemo aut doloribus harum. Commodi esse molestiae architecto explicabo distinctio autem
           maiores, rerum eligendi.</p>
-        <h3>Categoria: <span>Educação</span></h3>
         <h3>Prazo: <span>Indefinido</span></h3>
         <div class="contatos">
           <div class="telefone">

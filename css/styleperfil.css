@@ -201,6 +201,123 @@ label {
     color:rgb(24, 19, 95)
 }
 
+/*Parte de realizar um pedido/demanda*/
+
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content2 {
+    width: 70%;
+    padding: 20px;
+    background-color: #cfced3;
+    padding-bottom: 10px;
+    margin-left: 230px;
+    margin-top: 90px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/*Botão de fechar o popup*/
+.close2 {
+    position: absolute;
+    top: 100px;
+    right: 245px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(24, 19, 95);
+    color: white;
+    padding: 5px;
+    border-radius: 30%;
+    margin-right: 5px;
+}
+
+
+/*Estilização do botão de selecionar um arquivo*/
+#arquivo2 input {
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/*Títulos do popup*/
+.text-popup2 h1 {
+    font-size: 1.6rem;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*Parte do nome do projeto*/
+#labelTitulo2, #titulo2 {
+    padding: 5px;
+    margin-top: 7px;
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/*Parte da descrição/resumo do projeto*/
+#descricao2 {
+    border-radius: 8px;
+    margin-top: 7px;
+    padding: 5px;   
+    font-style: italic;
+    color:#b7b5b5;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+/*Parte de contatos*/
+.contatos-proj2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.contatos-proj2 input {
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+/*Parte de postar o arquivo*/
+.upload2 a{
+    text-decoration: none;
+    color: rgb(3, 1, 22);
+    background-color: rgb(231, 229, 234);
+    padding: 3px;
+    border-radius: 8px;
+}
+.postar-arquivo2 {
+    padding-top: 15px;
+}
+
+/*Botão de postagem*/
+.fazer-upload2 button {
+    padding: 8px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 155px;
+}
+
+.fazer-upload2 button:hover {
+    color: white;
+    background-color: #0e0333;
+}
+
+
 /*Responsividade*/
 @media screen and (max-width: 766px) {
 
