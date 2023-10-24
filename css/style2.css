@@ -219,6 +219,75 @@ main {
     color: white;
 }
 
+/*Parte do saiba mais*/
+#saiba {
+    padding-top: 50px;
+}
+
+.grid-container-alunos {
+    display: grid;
+    padding: 30px;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.grid-container-alunos h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: rgb(41 215 245);
+}
+
+.grid-container-alunos p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 15px;
+    padding-bottom: 70px;
+    text-align: justify;
+}
+
+/*Cada participante diferente*/
+.grid-item-alunos {
+    border: 1px solid #1198c9;
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(2 16 23);
+    border: 2px solid rgb(1 36 60);
+    padding-bottom: 30px;
+    box-shadow: 14px 13px 18px -3px rgba(136, 165, 175, 0.1);
+}
+
+.grid-container-alunos img {
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.grid-container-alunos a {
+    text-decoration: none;
+    color: rgb(31, 176, 202);
+    text-decoration: underline;
+}
+
+/*Footer*/
+footer {
+    padding: 15px;
+    padding-top: 70px;
+    background-color: #01080e;
+    color: rgb(202, 201, 201);
+    text-align: center;
+    font-weight: 300;
+}
+
+#logo-footer {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
 /*Começando o Site responsivo*/
 .mobile-menu-icon {
     display: none;
@@ -293,6 +362,18 @@ main {
         grid-template-rows: 1fr 1fr; 
         grid-template-columns: repeat(2, 1fr); 
         gap: 10px; 
+    }
+
+    .grid-container-alunos {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px; 
+    }
+
+    .saibamais #p-saiba {
+        text-align: justify;
+        font-size: 0.9rem;
     }
 
     .open {
