@@ -1,7 +1,8 @@
 //Declarando as variáveis e atribuindo seus valores html
 var projects = document.getElementById("projects");
 var categorias =  document.getElementById("exibir-categorias");
-var icone = document.getElementById("icon-proj");
+var iconeProj = document.getElementById("icon-proj");
+var iconePerfil = document.getElementById("icon-perfil");
 
 var perfil = document.getElementById('perfil');
 var opcoes = document.getElementById('exibir-opcoes');
@@ -11,7 +12,7 @@ projects.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(categorias);
 });
-icone.addEventListener("click", function(e) {
+iconeProj.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(categorias);
 });
@@ -38,7 +39,7 @@ perfil.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(opcoes);
 });
-icone.addEventListener("click", function(e) {
+iconePerfil.addEventListener("click", function(e) {
     e.preventDefault();
     visualizar(opcoes);
 });
