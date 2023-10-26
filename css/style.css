@@ -148,7 +148,7 @@ main {
 .grid-container-projects {
     display: grid;
     padding: 30px;
-    grid-template-rows: auto 1fr; 
+    grid-template-rows: auto; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 10px; 
 }
