@@ -41,6 +41,11 @@ p {
 }
 
 /*Parte da descrição/resumo do projeto*/
+
+.descricao-proj {
+    padding-left: 35px;
+}
+
 #descricao {
     border-radius: 8px;
     margin-top: 7px;
@@ -49,8 +54,8 @@ p {
     color:#b7b5b5;
     margin-bottom: 15px;
     resize: none;
-    margin-right: 53px;
-    width: 40%;
+    margin-right: 85px;
+    width: 41%;
 }
 
 /*Seleção das categorias*/
@@ -59,6 +64,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.area-abragente p {
+    padding-left: 60px;
 }
 
 .area-abragente select {
@@ -87,6 +96,10 @@ label {
     border-radius: 8px;
 }
 
+.cont {
+    padding-right: 12px;
+}
+
 /*Parte com instruções do modelo de projeto*/
 #dica-arc {
     padding-top: 20px;
@@ -113,7 +126,7 @@ label {
     color: rgb(231, 229, 234);
 }
 
-.postar-arquivo {
+.postar-arquivo, .postar-arquivoD {
     padding-top: 15px;
     display: flex;
     flex-direction: row;
@@ -135,6 +148,7 @@ label {
     border: none;
     cursor: pointer;
     margin-top: 50px;
+    margin-right: 50px;
     transition: .3s;
 }
 
@@ -149,7 +163,7 @@ label {
 }
 
 /*Parte de editar ou excluir o projeto já postado*/
-.editar-lixo {
+.editar-lixo, .historicoD {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -162,7 +176,7 @@ label {
     justify-content: center;
     width: 40%;
 }
-.editar-lixo p {
+.editar-lixo p, .historicoD p {
     padding-right: 130px;
 }
 
@@ -171,11 +185,11 @@ label {
     text-decoration: none;
     background-color: #0e0333;
     color: white;
-    padding: 5px;
+    padding: 8px;
     border-radius: 8px;
     text-align: center;
     margin-left: 650px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     transition: .3s;
 }
 .botao-sair a:hover {
@@ -189,13 +203,72 @@ label {
     padding-left: 430px;
 }
 
-/*Estilização do botão de selecionar um arquivo*/
+.input-demanda {
+    margin-left: 430px;
+}
+
+#labelTitulo, #tituloD {
+    padding: 5px;
+    margin-top: 7px;
+    width: 40%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-right: 53px;
+}
+
+#descricaoD {
+    border-radius: 8px;
+    margin-top: 7px;
+    padding: 5px;   
+    font-style: italic;
+    color:#b7b5b5;
+    margin-bottom: 15px;
+    resize: none;
+    margin-right: 85px;
+    width: 41%;
+}
+
+.contatos-demanda {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.contatos-demanda input {
+    width: 14%;
+    margin-right: 48px;
+    border-radius: 8px;
+}
+
+.fazer-upload-demanda button {
+    padding: 12px;
+    font-size: 1rem;
+    width: 40%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 437px;
+    transition: .3s;
+}
+
+.fazer-upload-demanda button:hover {
+    color: white;
+    background-color: #0e0333;
+    border: 1px solid rgb(68, 67, 67);
+}
+ 
+/*
+/*Estilização do botão de selecionar um arquivo
 #arquivo2 input {
     padding: 5px;
     border-radius: 8px;
 }
 
-/*Parte do nome do projeto*/
+/*Parte do nome do projeto
 #labelTitulo2, #titulo2 {
     padding: 5px;
     margin-top: 7px;
@@ -205,7 +278,7 @@ label {
     font-size: 1rem;
 }
 
-/*Parte da descrição/resumo do projeto*/
+/*Parte da descrição/resumo do projeto
 #descricao2 {
     border-radius: 8px;
     margin-top: 7px;
@@ -216,7 +289,7 @@ label {
     resize: none;
 }
 
-/*Parte de contatos*/
+/*Parte de contatos
 .contatos-proj2 {
     display: flex;
     flex-direction: row;
@@ -228,7 +301,7 @@ label {
     border-radius: 8px;
 }
 
-/*Parte de postar o arquivo*/
+/*Parte de postar o arquivo
 .upload2 a{
     text-decoration: none;
     color: rgb(3, 1, 22);
@@ -240,7 +313,7 @@ label {
     padding-top: 15px;
 }
 
-/*Botão de postagem*/
+/*Botão de postagem
 .fazer-upload2 button {
     padding: 8px;
     width: 50%;
@@ -255,7 +328,7 @@ label {
     color: white;
     background-color: #0e0333;
 }
-
+*/
 
 /*Responsividade*/
 @media screen and (max-width: 766px) {
@@ -267,11 +340,16 @@ label {
 
     .upload h1, .demanda h1 {
         text-align: center;
+        margin: 0 auto;
+    }
+
+    .demanda h1 {
+        padding-top: 20px;
     }
 
     p {
         text-align: center;
-        padding-right: 90px;
+        padding-right: 100px;
     }
 
     #labelTitulo, #titulo {
@@ -284,6 +362,11 @@ label {
         font-size: 1rem;
     }
 
+    .descricao-proj {
+        margin-right: 100px;
+        padding-left: 30px;
+    }
+
     #descricao {
         border-radius: 8px;
         margin-top: 2px;
@@ -292,27 +375,96 @@ label {
         color:#b7b5b5;
         margin-bottom: 15px;
         resize: none;
-        width: 80%;
+        width: 100%;
         padding-bottom: 50px;
-        margin-right: 10px;
+        margin-right: 30px;
     }
 
-    .area-abragente {
+    .area-abragente p {
         display: flex;
-        flex-direction: column;
-        margin-right: 130px;
+        flex-direction: row;
+        margin-right: 50px;
+        padding: 22px;
     }
 
-    .area-abragente {
+    .area-abragente #categoria {
+        margin-top: 1px;
+        margin-right: 150px;
+    }
+
+    .cont {
+        margin-right: 210px;
     }
 
     .contatos-proj {
         flex-direction: column;
+        margin-top: 5px;
     }
     .contatos-proj input {
         width: 60%;
         padding: 5px;
         justify-content: center;
+        margin-left: 25px;
+    }
+
+    #dica-arc {
+        margin-top: 1px;
+        margin-right: 10px;
+        padding-left: 30px;
+        width: 85%;
+        text-align: justify;
+    }
+    
+    #labelTitulo, #tituloD, #descricaoD{
+        width: 70%;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .demanda p{
+        padding-left: 20px;
+        text-align: left; /* Alinhe o texto à esquerda */
+        margin-right: 0; /* Remova a margem direita */
+    }
+
+    .contatos-demanda {
+        flex-direction: column;
+    }
+    
+    .contatos-demanda input {
+        width: 70%;
+        margin: 0;
+        margin-left: 20px;
+        padding: 5px;
+    }
+
+    #eD {
+        padding-left: 27px;  
+    }
+
+    .fazer-upload-demanda button {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+
+    .postar-arquivo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .postar-arquivo a {
+        padding: 5px;
+        width: 70%;
+    }
+
+    .postar-arquivoD {
+        margin-left: 20px;
+    }
+
+    #arquivo {
+        margin-right: 30px;
+        margin-top: 10px;
     }
 
     .fazer-upload button {
@@ -323,13 +475,21 @@ label {
         border-radius: 8px;
         border: none;
         cursor: pointer;
-        margin-top: 15px;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+    
+    .fazer-upload-demanda button{
+        background-color: #0e0333;
+        color: white;
+        margin-top: 40px;
         margin-left: 90px;
+        padding: 8px;
+        width: 50%;
     }
 
     .meus-arquivos p {
         border-radius: 8px;
-        background-color: #0e0333;
         color: white;
         margin: 10px;
         width: 70%;

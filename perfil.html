@@ -17,11 +17,11 @@
         <input type="text" id="titulo" placeholder=" " required />
       </div>
       <div class="descricao-proj">
-        <p style="padding-left: 35px;">Descrição do seu projeto: </p>
+        <p id=desc>Descrição do seu projeto: </p>
         <textarea id="descricao" for="descricao" rows="5" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
       </div>
       <div class="area-abragente">
-        <p style="padding-left: 60px;">Selecione a área abrangente: </p>
+        <p>Selecione a área abrangente: </p>
         <select id="categoria" name="categoria">
           <option value="cat" disabled selected>Categorias</option></optgroup>
           <option value="categoria1">Educação</option>
@@ -35,9 +35,9 @@
         </select>
       </div>
       <div class="contatos-proj">
-        <label for="telefone" style="padding-right: 12px;">Telefone:</label>
+        <label for="telefone" class="cont">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" required><br>
-        <label for="email" style="padding-right: 12px;">E-mail:</label>
+        <label for="email" class="cont">E-mail:</label>
         <input type="email" id="email" name="email" required><br>
       </div>
       <p id="dica-arc">Preencha o modelo a seguir com informações sobre o seu devido projeto e poste-o no botão de selecionar arquivo. Além de arquivos extras, caso queira.</p>
@@ -55,33 +55,33 @@
   <section class="demanda">
     <h1>Realizar Demanda</h1>
     <form id="seu-formulario">
-      <div class="titulo-proj">
+      <div class="titulo-demanda">
         <p>Título para seu pedido: </p>
-        <input type="text" id="titulo" placeholder=" " required style="margin-left: 430px;">
+        <input type="text" id="tituloD" placeholder=" " required class="input-demanda">
       </div>
-      <div class="descricao-proj">
+      <div class="descricao-demanda">
         <p>Breve resumo/descrição do serviço: </p>
-        <textarea id="descricao" for="descricao" rows="5" cols="50" style="margin-left: 430px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
+        <textarea id="descricaoD" for="descricao" rows="5" cols="50" class="input-demanda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
       </div>
-      <div class="contatos-proj" style="margin-bottom: 40px;">
+      <div class="contatos-demanda" style="margin-bottom: 40px;">
         <label for="telefone" style="padding-right: 10px; margin-left: 20px;">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" required><br>
-        <label for="email" style="padding-right: 10px;">E-mail:</label>
+        <label for="email" style="padding-right: 10px;" id="eD">E-mail:</label>
         <input type="email" id="email" name="email" required><br>
       </div>
-      <div class="postar-arquivo">
+      <div class="postar-arquivoD">
         <form action="" method="post" enctype="multipart/form-data">
           <input type="file" id="arquivo" name="arquivo">
         </form>
       </div>
-      <div class="fazer-upload">
-        <button style="margin-left: 430px;">Enviar</button>
+      <div class="fazer-upload-demanda">
+        <button class="btn-demanda">Enviar</button>
       </div>
     </form>
   </section>
   <section class="meus-arquivos">
     <h1>Histórico: </h1>
-    <div class="editar-lixo">
+    <div class="historicoD">
       <p>Projeto 1</p></h1><i class="fa-solid fa-trash-can" style="color: #fcfcfd;"></i><i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
     </div>
   </section>
