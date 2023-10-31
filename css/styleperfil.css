@@ -170,14 +170,23 @@ label {
     background-color: #4d4c52;
     border-radius: 8px;
     color: white;
-    margin: 10px;
-    margin-left: 430px;
-    gap: 8px;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
     width: 40%;
 }
 .editar-lixo p, .historicoD p {
-    padding-right: 130px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.historicoD i {
+    margin-left: 10px;
+}
+
+.botao-sair {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /*Botão de sair da conta*/
@@ -187,8 +196,6 @@ label {
     color: white;
     padding: 8px;
     border-radius: 8px;
-    text-align: center;
-    margin-left: 650px;
     font-size: 1.4rem;
     transition: .3s;
 }
@@ -488,11 +495,28 @@ label {
         width: 50%;
     }
 
+    .historicoD {
+        align-items: center;
+        padding: 8px;
+        width: 80%;
+        margin-left: 30px;
+    }
+
     .meus-arquivos p {
         border-radius: 8px;
         color: white;
         margin: 10px;
         width: 70%;
+    }
+
+    .botao-sair {
+        text-align: center;
+    }
+
+    .botao-sair a {
+        display: inline-block;
+        margin: 10px auto;
+        width: 80%;
     }
 
 }
