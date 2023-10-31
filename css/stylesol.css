@@ -95,6 +95,7 @@ nav {
 .link {
     color: white;
     text-decoration: none;
+    transition: all .3s;
 }
 
 /*Ao passar o mouse: */
@@ -113,6 +114,7 @@ nav {
     border-radius: 8px;
     font-size: 1.2rem;
     color: white;
+    transition: .3s;
 }
 
 .li #button button:hover {

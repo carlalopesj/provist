@@ -114,6 +114,7 @@ nav {
 .link {
     color: white;
     text-decoration: none;
+    transition: all .3s;
 }
 
 /*Ao passar o mouse: */

@@ -1,45 +1,27 @@
 /*Estilização das páginas de perfil, postagem de projetos e responsividade*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Labrada:wght@100;200&family=Lato:wght@100;300;400;700&family=Martian+Mono:wght@200;400;600&family=Raleway:wght@100;300&family=Ubuntu:wght@300;400;700&display=swap');
 
-/*Parte do PopUp que aparece ao clicar em "postar projeto"*/
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
+/*Estilizar postar projeto geral*/
+
+body {
+    font-family: 'Kanit', sans-serif;
 }
 
-.popup-content {
-    width: 70%;
-    padding: 20px;
-    background-color: #cfced3;
-    padding-bottom: 10px;
-    margin-left: 230px;
-    margin-top: 90px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.upload {
+    padding-top: 50px;
     text-align: center;
 }
 
-/*Botão de fechar o popup*/
-.close {
-    position: absolute;
-    top: 100px;
-    right: 245px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(24, 19, 95);
-    color: white;
-    padding: 5px;
-    border-radius: 30%;
-    margin-right: 5px;
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
 }
 
+p {
+    font-size: 1.2rem;
+    padding-right: 480px;
+}
 
 /*Estilização do botão de selecionar um arquivo*/
 #arquivo input {
@@ -47,44 +29,15 @@
     border-radius: 8px;
 }
 
-/*Dividindo o PopUp em duas colunas*/
-.text-popup {
-    display: flex; 
-    align-items: stretch; /* Garante que ambas as colunas tenham a mesma altura */
-    padding: 10px; 
-}
-
-.text-popup section {
-    flex: 7; /* As seções preenchem o espaço em 70% e 30% */
-    padding: 20px; 
-}
-
-.text-popup section:nth-child(2) {
-    flex: 3;
-    padding: 10px;
-}
-
-/*Títulos do popup*/
-.text-popup h1 {
-    font-size: 1.6rem;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.text-popup .upload {
-    border-right: 1px solid #0e0333; /* Adicione uma linha de separação vertical */
-    text-align: start;
-}
-
 /*Parte do nome do projeto*/
 #labelTitulo, #titulo {
     padding: 5px;
     margin-top: 7px;
-    width: 70%;
+    width: 40%;
     border-radius: 8px;
     margin-bottom: 15px;
     font-size: 1rem;
+    margin-right: 53px;
 }
 
 /*Parte da descrição/resumo do projeto*/
@@ -96,19 +49,23 @@
     color:#b7b5b5;
     margin-bottom: 15px;
     resize: none;
+    margin-right: 53px;
+    width: 40%;
 }
 
 /*Seleção das categorias*/
 .area-abragente {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .area-abragente select {
     padding: 5px;
-    margin-left: 15px;
+    margin-right: 53px;
     border-radius: 5px;
-    width: 37%;
+    width: 41%;
 }
   
 label {
@@ -120,48 +77,71 @@ label {
 .contatos-proj {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 40px;
+    justify-content: center;
 }
+
 .contatos-proj input {
-    margin-right: 10px;
-    margin-left: 5px;
+    width: 14%;
+    margin-right: 48px;
     border-radius: 8px;
 }
 
 /*Parte com instruções do modelo de projeto*/
 #dica-arc {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 8px;
     font-size: 0.8rem;
     font-style: italic;
+    padding-left: 450px;
 }
 
-/*Parte de postar o arquivo*/
+/*Parte de baixar e postar o arquivo*/
 .upload a{
     text-decoration: none;
     color: rgb(3, 1, 22);
     background-color: rgb(231, 229, 234);
-    padding: 3px;
+    padding: 10px;
     border-radius: 8px;
+    font-size: 1.2rem;
+    margin-right: 150px;
+    transition: .3s;
 }
+
+.upload a:hover{
+    background-color: rgb(3, 1, 22);
+    color: rgb(231, 229, 234);
+}
+
 .postar-arquivo {
     padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#arquivo {
+    padding-right: 40px;
 }
 
 /*Botão de postagem*/
 .fazer-upload button {
-    padding: 8px;
-    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    width: 40%;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    margin-top: 15px;
-    margin-left: 155px;
+    margin-top: 50px;
+    transition: .3s;
 }
 
 .fazer-upload button:hover {
     color: white;
     background-color: #0e0333;
+    border: 1px solid rgb(68, 67, 67);
 }
 
 .meus-arquivos {
@@ -173,13 +153,14 @@ label {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #0e0333;
+    background-color: #4d4c52;
     border-radius: 8px;
     color: white;
     margin: 10px;
-    padding: 5px;
-    margin-left: 10px;
+    margin-left: 430px;
     gap: 8px;
+    justify-content: center;
+    width: 40%;
 }
 .editar-lixo p {
     padding-right: 130px;
@@ -193,54 +174,20 @@ label {
     padding: 5px;
     border-radius: 8px;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 650px;
     font-size: 1.6rem;
+    transition: .3s;
 }
 .botao-sair a:hover {
-    background-color: white;
-    color:rgb(24, 19, 95)
+    background-color: rgb(231, 229, 234);
+    color: #0e0333;
 }
 
 /*Parte de realizar um pedido/demanda*/
 
-.popup2 {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
+.demanda p {
+    padding-left: 430px;
 }
-
-.popup-content2 {
-    width: 70%;
-    padding: 20px;
-    background-color: #cfced3;
-    padding-bottom: 10px;
-    margin-left: 230px;
-    margin-top: 90px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-/*Botão de fechar o popup*/
-.close2 {
-    position: absolute;
-    top: 100px;
-    right: 245px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(24, 19, 95);
-    color: white;
-    padding: 5px;
-    border-radius: 30%;
-    margin-right: 5px;
-}
-
 
 /*Estilização do botão de selecionar um arquivo*/
 #arquivo2 input {
@@ -248,19 +195,11 @@ label {
     border-radius: 8px;
 }
 
-/*Títulos do popup*/
-.text-popup2 h1 {
-    font-size: 1.6rem;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 /*Parte do nome do projeto*/
 #labelTitulo2, #titulo2 {
     padding: 5px;
     margin-top: 7px;
-    width: 70%;
+    width: 40%;
     border-radius: 8px;
     margin-bottom: 15px;
     font-size: 1rem;
@@ -326,8 +265,13 @@ label {
         color: rgb(3, 1, 22);
     }
 
-    h1 {
+    .upload h1, .demanda h1 {
         text-align: center;
+    }
+
+    p {
+        text-align: center;
+        padding-right: 90px;
     }
 
     #labelTitulo, #titulo {
@@ -336,6 +280,7 @@ label {
         width: 70%;
         border-radius: 8px;
         margin-bottom: 8px;
+        margin-right: 30px;
         font-size: 1rem;
     }
 
@@ -347,7 +292,18 @@ label {
         color:#b7b5b5;
         margin-bottom: 15px;
         resize: none;
-        width: 97%;
+        width: 80%;
+        padding-bottom: 50px;
+        margin-right: 10px;
+    }
+
+    .area-abragente {
+        display: flex;
+        flex-direction: column;
+        margin-right: 130px;
+    }
+
+    .area-abragente {
     }
 
     .contatos-proj {
@@ -356,6 +312,7 @@ label {
     .contatos-proj input {
         width: 60%;
         padding: 5px;
+        justify-content: center;
     }
 
     .fazer-upload button {
