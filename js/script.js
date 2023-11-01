@@ -89,7 +89,7 @@ function logout() {
     window.location.href = 'index.html';
 }
 
-//POPUP - INVESTIMENTOS
+//POPUP - INVESTIMENTOS e COLABORAÇÔES
 // Função para abrir um pop-up
 function abrirPopUp(popUpId) {
     document.getElementById(popUpId).style.display = 'block';
@@ -121,7 +121,18 @@ function abrirPopUp(popUpId) {
     }
   });
 
+//POPUP - AVISO
+
+function mostrarAviso(acao) {
+    var aviso = document.getElementById('aviso');
+    aviso.style.display = 'block';
+    aviso.innerHTML = 'Para ' + acao + ', você precisa fazer o <a href="login.html" style="color: red";>Login.</a>';
+
+    // Defina um tempo limite para ocultar a mensagem após alguns segundos (opcional)
+    setTimeout(function () {
+        aviso.style.display = 'none';
+    }, 5000); 
 
 
-
+}
 

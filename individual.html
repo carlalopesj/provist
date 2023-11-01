@@ -82,18 +82,12 @@
                 <h1>Nome do Projeto</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nobis natus error odit atque eligendi corporis repellat illum, expedita nisi, ullam explicabo. Nostrum, molestias nisi doloremque sequi porro animi debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, perspiciatis eum. Recusandae neque, odit iure aperiam quasi, consequuntur similique distinctio repellendus omnis eos ducimus. Dolor illum ex placeat nisi totam.</p>
                 <div class="button">
-                    <button id="investe">Investir</button>            
-                    <button id="colabore">Colaborar</button>
+                    <button id="investir" onclick="mostrarAviso('Investir')">Investir</button>
+                    <button id="colaborar" onclick="mostrarAviso('Colaborar')">Colaborar</button>
                 </div>
-                <div class="contatos">
-                    <div class="telefone">
-                        <i class="fa-solid fa-phone" style="color: #a0a4a8;"></i>
-                        <p>(61)1234-5678</p>
-                    </div>
-                    <div class="email">
-                        <i class="fa-solid fa-envelope" style="color: #a0a4a8;"></i>
-                        <p>email@contato.com</p>
-                    </div>
+                <!-- Div para exibir o aviso -->
+                <div id="aviso" style="display: none;">
+                    <p>Para acessar esta funcionalidade, faça o <a href="login.html">Login</a>.</p>
                 </div>
             </div>
             <div class="arquivos-projeto">

@@ -173,22 +173,22 @@ nav {
     color:#a0a4a8;
 }
 
-/*Botões de Investir e Colaborar*/
-#investe {
+/*Botões de investir e colaborar*/
+#investir {
     background-color: rgb(6, 177, 6);
     color: white;
 }
 
-#investe:hover {
+#investir:hover {
     background-color: green;
 }
 
-#colabore {
+#colaborar {
     background-color: rgb(174, 174, 25);
     color: white;
 }
 
-#colabore:hover {
+#colaborar:hover {
     background-color: rgb(123, 123, 14);
 }
 
@@ -223,8 +223,21 @@ nav {
     text-align: center;
 }
 
-/*POPUP - Investimentos*/
+/*MENSAGEM - AVISO*/
+/* Estilos para os pop-ups */
 
+#aviso {
+    padding-top: 20px;
+    color: rgb(170, 14, 14);
+}
+
+
+
+
+/* Estilos para os botões de Investir e Colaborar */
+#investir, #colaborar {
+    cursor: pointer;
+}
 
 /*Começando o Site responsivo*/
 .mobile-menu-icon {
