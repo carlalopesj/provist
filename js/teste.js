@@ -20,8 +20,8 @@ if (categoria === "educacao") {
   conteudo.innerHTML = "MEIO-AMBIENTE";
   frase.innerHTML = "Proteger a natureza não é uma escolha, é nossa responsabilidade compartilhada. Pequenas ações diárias geram grandes impactos para um futuro sustentável.";
 } else if (categoria === "financas") {
-  conteudo.innerHTML = "A economia é uma virtude distributiva e consiste não em poupar mas em escolher.";
-  frase.innerHTML = "Finançassssa s";
+  conteudo.innerHTML = "FINANÇAS";
+  frase.innerHTML = "A economia é uma virtude distributiva e consiste não em poupar mas em escolher.";
 } else if (categoria === "entretenimento") {
   conteudo.innerHTML = "ENTRETENIMENTO";
   frase.innerHTML = "O entretenimento é a mágica que nos transporta para outros mundos sem sair do lugar.";
