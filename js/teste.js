@@ -1,3 +1,7 @@
+/**
+ * Parte para testes de códigos, - Mudar frase de acordo com o link clicado
+ */
+
 const params = new URLSearchParams(window.location.search);
 const categoria = params.get("categoria");
 const conteudo = document.getElementById('conteudo');

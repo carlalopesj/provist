@@ -222,6 +222,13 @@ main {
     padding-top: 50px;
 }
 
+#p-saiba {
+    padding: 50px; 
+    text-align: center; 
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+
 .grid-container-alunos {
     display: grid;
     padding: 30px;
@@ -372,6 +379,8 @@ footer {
     .saibamais #p-saiba {
         text-align: justify;
         font-size: 0.9rem;
+        width: 100%;
+        padding: 20px;
     }
 
     .open {
