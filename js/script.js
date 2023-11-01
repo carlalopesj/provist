@@ -90,8 +90,36 @@ function logout() {
 }
 
 //POPUP - INVESTIMENTOS
+// Função para abrir um pop-up
+function abrirPopUp(popUpId) {
+    document.getElementById(popUpId).style.display = 'block';
+  }
+  
+  // Função para fechar um pop-up
+  function fecharPopUp(popUpId) {
+    document.getElementById(popUpId).style.display = 'none';
+  }
+  
+  // Event listeners para os botões de Investir e Colaborar
+  document.getElementById('investe').addEventListener('click', function () {
+    abrirPopUp('pop-up-investir');
+  });
+  
+  document.getElementById('colabore').addEventListener('click', function () {
+    abrirPopUp('pop-up-colabore');
+  });
 
+  document.getElementById('pop-up-colabore').addEventListener('click', function (event) {
+    if (event.target === this) {
+      fecharPopUp('pop-up-colabore');
+    }
+  });
 
+  document.getElementById('pop-up-investir').addEventListener('click', function (event) {
+    if (event.target === this) {
+      fecharPopUp('pop-up-investir');
+    }
+  });
 
 
 

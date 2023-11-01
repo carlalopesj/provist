@@ -102,14 +102,56 @@
           <button id="investe">Investir</button>
           <button id="colabore">Colaborar</button>
         </div>
-        <div class="contatos">
-          <div class="telefone">
-            <i class="fa-solid fa-phone" style="color: #a0a4a8;"></i>
-            <p>(61)1234-5678</p>
+        <!-- Pop-up de Investir -->
+        <div id="pop-up-investir" class="pop-up">
+          <div class="pop-up-content">
+            <span class="close-button" onclick="fecharPopUp('pop-up-investir')">&times;</span>
+            <h2>Investir</h2>
+            <p>Entre em contato com o desenvolvedor do projeto: </p>
+            <div class="contatos">
+              <div class="telefone">
+                <i class="fa-solid fa-phone" style="color: #a0a4a8;"></i>
+                <p>(61)1234-5678</p>
+              </div>
+              <div class="email">
+                <i class="fa-solid fa-envelope" style="color: #a0a4a8;"></i>
+                <p>email@contato.com</p>
+              </div>
+            </div>
+            <!-- Adicione aqui o conteúdo do pop-up de Investir -->
           </div>
-          <div class="email">
-            <i class="fa-solid fa-envelope" style="color: #a0a4a8;"></i>
-            <p>email@contato.com</p>
+        </div>
+        <!-- Pop-up de Colaborar -->
+        <div id="pop-up-colabore" class="pop-up">
+          <div class="pop-up-content">
+            <span class="close-button" onclick="fecharPopUp('pop-up-colabore')">&times;</span>
+            <h2>Colaborar</h2>
+            <div class="comentarios">
+              <div class="opcao-coment">
+                <p class="nome-user">Nome do usário</p>
+                <div class="acoes-coment">
+                  <p>Responder</p>
+                  <i class="fa-regular fa-star" style="color:#e2d638;"></i>
+                </div>
+              </div>
+              <p class="user-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet reprehenderit tempora fuga mollitia, unde maiores! Nihil sed commodi nemo atque reprehenderit obcaecati vitae dolorem, quia libero a totam necessitatibus provident.</p>
+            </div> 
+            <div class="comentarios">
+              <div class="opcao-coment">
+                <p class="nome-user">Nome do usário</p>
+                <div class="acoes-coment">
+                  <p>Responder</p>
+                  <i class="fa-regular fa-star" style="color:#e2d638;"></i>
+                </div>
+              </div>
+              <p class="user-coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet reprehenderit tempora fuga mollitia, unde maiores! Nihil sed commodi nemo atque reprehenderit obcaecati vitae dolorem, quia libero a totam necessitatibus provident.</p>
+            </div> 
+            <div class="comentarios">
+              <p class="nome-user">Deixe aqui a sua colaboração: </p>
+              <textarea></textarea>
+              <button>Enviar</button>
+            </div> 
+            <!-- Adicione aqui o conteúdo do pop-up de Colaborar -->
           </div>
         </div>
       </div>
