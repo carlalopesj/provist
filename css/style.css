@@ -145,6 +145,51 @@ main {
     font-size: 3.2rem;
 }
 
+/*Carrossel imagens tutorial*/
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel button {
+    cursor: pointer;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
 /*Parte dos projetos e categorias*/
 .grid-container-projects {
     display: grid;
