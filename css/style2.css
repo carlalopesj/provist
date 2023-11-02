@@ -289,6 +289,7 @@ main {
 }
 
 .grid-container-alunos img {
+    width: 60%;
     height: 150px;
     padding-bottom: 20px;
 }
@@ -405,6 +406,10 @@ footer p {
         flex-direction: column;
         padding: 20px;
         gap: 40px; 
+    }
+
+    .grid-container-alunos img {
+        width: 55%;
     }
 
     .grid-item-r {
