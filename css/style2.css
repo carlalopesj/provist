@@ -149,6 +149,26 @@ main {
     font-size: 3.2rem;
 }
 
+/*Projetos - Categorias*/
+.projects h2 {
+    margin-top: 100px;
+}
+
+/*Carrossel imagens tutorial*/
+ 
+.tutorial h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.carousel-inner img {
+    box-shadow: 0 1px 2px #0003;
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
 /*Parte dos projetos e categorias*/
 .grid-container-projects {
     display: grid;
@@ -289,6 +309,10 @@ footer {
     font-weight: 300;
 }
 
+footer p {
+    padding: 1px;
+}
+
 #logo-footer {
     color: white;
     font-size: 1.2rem;
@@ -396,6 +420,13 @@ footer {
 
     .open {
         display: block;
+    }
+
+    .carousel-inner img {
+        box-shadow: 0 1px 2px #0003;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
 

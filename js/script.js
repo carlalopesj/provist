@@ -137,30 +137,3 @@ function mostrarAviso(acao) {
 }
 
 //Carrossel de imagens - TUTORIAL
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-let currentSlide = 0;
-
-function showSlide(slideIndex) {
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
-    });
-}
-
-function prevSlide() {
-    if (currentSlide > 0) {
-        currentSlide--;
-        showSlide(currentSlide);
-    }
-}
-
-function nextSlide() {
-    if (currentSlide < slides.length - 1) {
-        currentSlide++;
-        showSlide(currentSlide);
-    }
-}
-
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);

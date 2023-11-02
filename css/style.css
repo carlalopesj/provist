@@ -145,49 +145,24 @@ main {
     font-size: 3.2rem;
 }
 
+/*Projetos - Categorias*/
+.projects h2 {
+    margin-top: 100px;
+}
+
 /*Carrossel imagens tutorial*/
-.carousel {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+ 
+.tutorial h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
 }
 
-.carousel-inner {
-    display: flex;
-    overflow: hidden;
-}
-
-.slide {
-    min-width: 100%;
-    transition: 0.5s;
-}
-
-.carousel img {
-    max-width: 100%;
+.carousel-inner img {
+    box-shadow: 0 1px 2px #0003;
+    max-width: 60%;
     height: auto;
-}
-
-.carousel button {
-    cursor: pointer;
-}
-
-#prevBtn, #nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-#prevBtn {
-    left: 0;
-}
-
-#nextBtn {
-    right: 0;
+    margin: 0 auto;
 }
 
 /*Parte dos projetos e categorias*/
@@ -331,6 +306,10 @@ footer {
     font-weight: 300;
 }
 
+footer p {
+    padding: 1px;
+}
+
 #logo-footer {
     color: white;
     font-size: 1.2rem;
@@ -430,6 +409,13 @@ footer {
 
     .open {
         display: block;
+    }
+
+    .carousel-inner img {
+        box-shadow: 0 1px 2px #0003;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
