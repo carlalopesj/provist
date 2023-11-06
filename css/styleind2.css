@@ -348,9 +348,9 @@ nav {
     display: flex; /* Torna os elementos filhos flexíveis */
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: center;
-  }
+}
   
-  .contatos {
+.contatos {
     display: flex; /* Torna os contatos internos flexíveis */
     flex-direction: column;
 }
@@ -435,8 +435,11 @@ nav {
     }
 
     #pop-up-colabore .pop-up-content {
-        width: 90%;
+        width: 92%;
         height: 93%;
+        max-width: 92%; /* Defina a largura máxima desejada para o pop-up */
+        max-height: 93%; /* Defina a altura máxima desejada para o pop-up */
+        overflow: auto; /* Permite a rolagem quando o conteúdo excede as dimensões máximas */
     }
 
     #pop-up-colabore textarea {
@@ -452,6 +455,11 @@ nav {
         margin-left: 160px;
         width: 40%;
     }
+
+    .entrar-contato {
+        flex-direction: column;
+      }
+    
 
 
 }
