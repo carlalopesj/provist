@@ -254,10 +254,10 @@ main {
 
 .grid-container-alunos {
     display: grid;
-    padding: 30px;
+    padding: 90px;
     grid-template-rows: 1fr 1fr; 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
 }
 
 .grid-container-alunos h6 {
@@ -290,7 +290,7 @@ main {
 
 .grid-container-alunos img {
     width: 60%;
-    height: 150px;
+    height: 180px;
     padding-bottom: 20px;
 }
 
