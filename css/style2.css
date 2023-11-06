@@ -254,9 +254,8 @@ main {
 
 .grid-container-alunos {
     display: grid;
-    padding: 100px;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-columns: repeat(3, 2fr); 
+    padding: 70px;
+    grid-template-columns: 1fr 1fr; 
     gap: 40px; 
 }
 
@@ -278,6 +277,19 @@ main {
 }
 
 /*Cada participante diferente*/
+.flex-item {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Parte do orientador educacional*/
+.grid-item-alunos:nth-child(9) {
+   grid-column: span 2; 
+}
+.grid-item-alunos:nth-child(9) img {
+    width: auto;
+}
+
 .grid-item-alunos {
     border: 1px solid #1198c9;
     padding: 7px;
@@ -291,13 +303,13 @@ main {
 .grid-container-alunos img {
     width: 60%;
     height: 180px;
-    padding-bottom: 20px;
 }
 
 .grid-container-alunos a {
     text-decoration: none;
     color: rgb(31, 176, 202);
     text-decoration: underline;
+    text-align: end;
 }
 
 /*Footer*/
@@ -398,6 +410,10 @@ footer img {
 
     .grid-item-p {
         padding: 30px;
+    }
+
+    .flex-item {
+        display: block;
     }
 
     .grid-container-alunos {

@@ -100,14 +100,15 @@ nav {
 }
 
 /*Hover para as sublistas*/
-.linkCat a:hover, .linkOp a:hover {
-    color:#a0a4a8;
+.linkCat a:hover,
+.linkOp a:hover {
+    color: #a0a4a8;
     font-style: italic;
 }
 
 /*ícone ao lado de projetos*/
 #icon-proj {
-    color: #ffffff; 
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -130,13 +131,15 @@ nav {
 }
 
 /*Ao passar o mouse: */
-.link-proj:hover .link, .link:hover, .link-proj:hover #icon-proj {
+.link-proj:hover .link,
+.link:hover,
+.link-proj:hover #icon-proj {
     color: rgb(43, 174, 226);
 }
 
 
 /*Botão de Login e Cadastro*/
-.li #button button{
+.li #button button {
     padding: 10px;
     background-color: rgb(43, 174, 226);
     text-decoration: none;
@@ -189,7 +192,7 @@ nav {
 
 #madeby {
     font-style: italic;
-    color:#a0a4a8;
+    color: #a0a4a8;
 }
 
 /*Botões de investir e colaborar*/
@@ -221,7 +224,8 @@ nav {
     padding-top: 30px;
 }
 
-.telefone p, .email p {
+.telefone p,
+.email p {
     padding: 10px;
 }
 
@@ -243,9 +247,9 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-  }
-  
-  .pop-up-content {
+}
+
+.pop-up-content {
     background-color: #ffffff;
     position: absolute;
     top: 50%;
@@ -254,33 +258,33 @@ nav {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  /*Parte de investimentos*/
-  #pop-up-investir h2 {
+/*Parte de investimentos*/
+#pop-up-investir h2 {
     color: rgb(174, 174, 25);
-  }
+}
 
 
-  /*Parte de colaborações*/
-  #pop-up-colabore h2 {
-    color:rgb(6, 177, 6);
+/*Parte de colaborações*/
+#pop-up-colabore h2 {
+    color: rgb(6, 177, 6);
     padding-bottom: 10px;
-  }
+}
 
-  .comentarios {
+.comentarios {
     border: 1px solid gray;
     padding: 10px;
     margin-top: 20px;
-  }
+}
 
-  .comentarios .nome-user {
+.comentarios .nome-user {
     font-weight: bold;
     font-size: 0.9rem;
     padding: 2px;
-  }
+}
 
-  .comentarios textarea {
+.comentarios textarea {
     width: 100%;
     height: 79px;
     margin-top: 20px;
@@ -288,29 +292,29 @@ nav {
     resize: none;
     font-size: 1rem;
     font-weight: 200;
-  }
+}
 
-  .opcao-coment {
+.opcao-coment {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .acoes-coment {
+.acoes-coment {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 0.9rem;
     gap: 10px;
-  }
+}
 
-  .acoes-coment p {
+.acoes-coment p {
     margin-bottom: 20px;
     cursor: pointer;
-  }
+}
 
-  .comentarios button {
+.comentarios button {
     background-color: rgb(6, 177, 6);
     color: white;
     align-items: end;
@@ -318,27 +322,38 @@ nav {
     width: 10%;
     margin-left: 630px;
     transition: .3s;
-  }
+}
 
-  .comentarios button:hover {
+.comentarios button:hover {
     background-color: rgb(3, 141, 3);
-  }
+}
 
-  /*Botão para fechar*/
-  
-  .close-button {
+/*Botão para fechar*/
+
+.close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-  }
-  
-  /* Estilos para os botões de Investir e Colaborar */
-  #investe, #colabore {
+}
+
+/* Estilos para os botões de Investir e Colaborar */
+#investe,
+#colabore {
     cursor: pointer;
+}
+
+.entrar-contato {
+    display: flex; /* Torna os elementos filhos flexíveis */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center;
   }
   
+  .contatos {
+    display: flex; /* Torna os contatos internos flexíveis */
+    flex-direction: column;
+}
 
 .arquivos-projeto fieldset {
     background-color: rgb(206, 206, 208);
@@ -375,6 +390,7 @@ nav {
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
@@ -403,6 +419,7 @@ nav {
     .main {
         padding: 50px;
     }
+
     .principal {
         padding-top: 100px;
         flex-direction: column;
@@ -435,6 +452,6 @@ nav {
         margin-left: 160px;
         width: 40%;
     }
-      
-      
+
+
 }
