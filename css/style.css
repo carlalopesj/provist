@@ -122,6 +122,11 @@ nav {
     cursor: pointer;
 }
 
+#logo img {
+    height: 28px;
+    margin-bottom: 20px;
+}
+
 /*Estrutura principal do Site*/
 main {
     padding-top: 50px;
@@ -420,6 +425,11 @@ footer img {
 
     footer img {
         width: 30%;
+    }
+
+    #logo img {
+        height: 28px;
+        margin-top: 20px;
     }
 }
 
