@@ -293,6 +293,7 @@ main {
 .grid-container-alunos img {
     height: 150px;
     padding-bottom: 20px;
+    width: auto;
 }
 
 .grid-container-alunos a {

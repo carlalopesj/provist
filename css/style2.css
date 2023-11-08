@@ -41,6 +41,11 @@ nav {
     font-weight: 600;
 }
 
+#logo img {
+    height: 28px;
+    margin-bottom: 20px;
+}
+
 /*Divisão das categorias ao clicar em projetos*/
 .nav ul li {
     position: relative;
@@ -254,9 +259,10 @@ main {
 
 .grid-container-alunos {
     display: grid;
-    padding: 70px;
-    grid-template-columns: 1fr 1fr; 
-    gap: 40px; 
+    padding: 30px;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
 }
 
 .grid-container-alunos h6 {
@@ -277,18 +283,6 @@ main {
 }
 
 /*Cada participante diferente*/
-.flex-item {
-    display: flex;
-    flex-direction: row;
-}
-
-/*Parte do orientador educacional*/
-.grid-item-alunos:nth-child(9) {
-   grid-column: span 2; 
-}
-.grid-item-alunos:nth-child(9) img {
-    width: auto;
-}
 
 .grid-item-alunos {
     border: 1px solid #1198c9;
@@ -412,10 +406,6 @@ footer img {
         padding: 30px;
     }
 
-    .flex-item {
-        display: block;
-    }
-
     .grid-container-alunos {
         display: flex;
         flex-direction: column;
@@ -451,6 +441,11 @@ footer img {
 
     footer img {
         width: 30%;
+    }
+
+    #logo img {
+        height: 28px;
+        margin-top: 20px;
     }
 }
 

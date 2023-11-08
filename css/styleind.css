@@ -52,6 +52,11 @@ nav {
     font-weight: 600;
 }
 
+#logo img {
+    height: 28px;
+    margin-bottom: 20px;
+}
+
 /*Divisão das categorias ao clicar em projetos*/
 .nav ul li {
     position: relative;
@@ -299,6 +304,11 @@ nav {
     .text-projeto {
         margin: 0 auto;
         padding-bottom: 20px;
+    }
+
+    #logo img {
+        height: 28px;
+        margin-top: 20px;
     }
 
 
