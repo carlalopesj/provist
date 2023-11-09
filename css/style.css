@@ -363,8 +363,8 @@ footer img {
 
     .img-home img {
         margin-left: 0;
-        max-width:300px;
-        max-height:500px;
+        max-width:auto;
+        max-height:auto;
         width: auto;
         height: auto;
     }
