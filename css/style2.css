@@ -161,9 +161,9 @@ main {
     text-align: center;
 }
 .img-home img {
-    margin-left: 0;
-    max-width:700px;
-    max-height:700px;
+    margin-right: 100px;
+    max-width:950px;
+    max-height:850px;
     width: auto;
     height: auto;
 }
@@ -375,8 +375,8 @@ footer img {
 
     .img-home img {
         margin-left: 0;
-        max-width:300px;
-        max-height:500px;
+        max-width:300;
+        max-height:500;
         width: auto;
         height: auto;
     }
