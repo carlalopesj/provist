@@ -125,7 +125,7 @@ label {
 }
 
 /*Parte de baixar e postar o arquivo*/
-.upload a{
+.upload a, .demanda a{
     text-decoration: none;
     color: rgb(3, 1, 22);
     background-color: rgb(231, 229, 234);
@@ -136,7 +136,7 @@ label {
     transition: .3s;
 }
 
-.upload a:hover{
+.upload a:hover, .demanda a:hover{
     background-color: rgb(3, 1, 22);
     color: rgb(231, 229, 234);
 }
