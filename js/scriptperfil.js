@@ -23,9 +23,11 @@ formulario.addEventListener('submit', function(event) {
     window.location.href = 'propage2.html';
 });
 
+/*
 //Verificar/Ver informações no localStorage
 for (let i = 0; i < localStorage.length; i++) {
     const chave = localStorage.key(i);
     const valor = localStorage.getItem(chave);
     console.log(`Chave: ${chave}, Valor: ${valor}`);
   }
+*/

@@ -142,7 +142,7 @@ botaoConfirm.addEventListener('click', ()=>{
   }
 })
 
-//Visualizar o localStorage
+/*Visualizar o localStorage
 for (var i = 0; i < localStorage.length; i++) {
   var key = localStorage.key(i);
   var value = localStorage.getItem(key);
@@ -150,7 +150,7 @@ for (var i = 0; i < localStorage.length; i++) {
 }
 
 localStorage.clear();
-
+*/
 
 
 
