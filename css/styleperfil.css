@@ -229,7 +229,7 @@ label {
     margin-left: 430px;
 }
 
-#labelTitulo, #tituloD {
+#labelTitulo, #tituloD, #prazo {
     padding: 5px;
     margin-top: 7px;
     width: 40%;
@@ -237,6 +237,11 @@ label {
     margin-bottom: 15px;
     font-size: 1rem;
     margin-right: 53px;
+}
+
+#prazo {
+    width: 20%;
+    margin-left: 430px;
 }
 
 #descricaoD {
@@ -454,7 +459,7 @@ label {
         text-align: justify;
     }
     
-    #labelTitulo, #tituloD, #descricaoD{
+    #labelTitulo, #tituloD, #descricaoD, #prazo{
         width: 70%;
         margin: 0;
         margin-left: 20px;
