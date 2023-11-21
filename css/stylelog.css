@@ -158,8 +158,18 @@ a:hover{
   display: none;
 }
 
+img {
+  width: 25%;
+  padding: 10px;
+  margin-left: 550px;
+}
+
 /*Responsivo*/
 @media screen and (max-width: 766px) {
+
+  body {
+    overflow: hidden;
+  }
 
     #logo {
         font-size: 2rem;
@@ -173,5 +183,11 @@ a:hover{
         width: 300px;
         align-items: center;
         padding-bottom: 20px;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 80%;
+      padding-left: 30px;
     }
 }
