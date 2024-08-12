@@ -2,6 +2,9 @@
 
 Trabalho realizado por um grupo composto de 8 pessoas, no qual atuei como Scrum Master e no Time de Desenvolvimento.
 
+![provist-logo-semfundo](https://github.com/user-attachments/assets/37146bed-451c-41ef-823b-d287d3f1f365)
+
+
 ## Sobre o Projeto
 A Provist é uma plataforma inovadora dedicada a desencadear a transformação de ideias em projetos tangíveis. Nosso objetivo é criar um ambiente colaborativo onde empreendedores, investidores e colaboradores possam se conectar, compartilhar conhecimento e impulsionar a realização de projetos impactantes em diversas áreas. Além de proporcionar experiências, principalmente, para universitários, com a possibilidade de prestação de serviços, aumentando, assim, o aprendizado e acréscimo no mercado de trabalho.
 
@@ -30,6 +33,6 @@ Experimente acessando www.provist.com.br no navegador ou clicando aqui: [Provist
 
 Veja mais sobre as funcionalidades na documentação do projeto para o usuário final: [Documentação Provist.pdf](https://github.com/user-attachments/files/16576635/Documentacao.Provist.pdf)
 
-![provist-logo-semfundo](https://github.com/user-attachments/assets/37146bed-451c-41ef-823b-d287d3f1f365)
+
 
  
